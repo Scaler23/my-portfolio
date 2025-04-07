@@ -1,0 +1,75 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5rem;
+   left: 50%;
+   transform: translate(-50%);
+ 
+   width: 100%;
+   flex-direction: column;
+}
+.contact p{
+    font-size: 24px;
+    font-weight: var(--normal);
+    margin-bottom: 2rem;
+}
+.contact form{
+    width: 50%;
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   gap: 4rem;
+}
+.contact .row{
+  width: 100%;
+}
+.contact form .row{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+.contact form .first-column{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+
+}
+.contact form .second-column{
+    width: 50%;
+}
+.first-column input{
+    background-color: #8E8E8E;
+    padding: 1rem 1.5rem;
+    height: 57px;
+    border-radius: 10px;
+}
+.first-column input::placeholder{
+    color: white;
+    font-size: 20px;
+    font-weight: var(--extra-light);
+}
+.message{
+    width: 100%;
+    resize: none;
+    background-color: #8E8E8E;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+}
+.message::placeholder{
+    color: white;
+    font-size: 20px;
+    font-weight: var(--extra-light);
+}
+.submit{
+    width: 162px;
+    height: 55px;
+    background-color: #DA324A;
+    font-size: 24px;
+    font-weight: var(--normal);
+}

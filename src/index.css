@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+@import "tailwindcss";
+html{
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+
+
+}
+html, body {
+overflow-x: hidden;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+ 
+}
+:root{
+
+    /* =======================CSS VARIABLES ====================== */
+           /* 0.5rem = 8px */
+          /* 1rem = 16px */
+      /* font Weight */
+--h1-fontSize: 2.5rem; /* 40px */
+--h2-fontSize: 2rem; /* 32px */
+--h3-fontSize: 1.75rem; /* 28px */
+--h4-fontSize:  1.5rem; /* 24px */
+--h5-fontSize: 1.25rem; /* 20px */
+--h6-fontSize:1rem; /* 16px */
+
+           --thin: 100;
+           --extra-light:200;
+           --light:300;
+           --normal:400;
+           --medium:500;
+           --semi-bold:600;
+           --bold:700;
+           --extra-bold: 800;
+           --black: 900;
+
+     /* navigation size and weight */
+
+     --nav-fontWeight: bold;
+     --nav-fontSize: 24px;
+
+     /* background color */
+     --second-backgroundColor: #CE0404;
+     --linear-first-backgroundColor: #231F20;
+     --linear-second-backgroundColor: #2F2D2E;
+     --linear-third-backgroundColor: #383838;
+     --button:#DA324A;
+
+     /* title font size and weights */
+
+     --title-fontSize: 24px;
+     --title-fontWeight: 400;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.75rem;
+}
+h4{
+  font-size: 1.5rem;
+}
+h5{
+  font-size: 1.25rem;
+}
+h6{
+  font-size: 1rem;
+}
+
