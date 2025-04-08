@@ -2,6 +2,7 @@ import "./Home.css"
 import { Link, Outlet } from "react-router-dom"
 const Home = () => {
   return (
+ 
       <div className="home" id="home">
         <div className="title"> 
           <h1>
@@ -20,8 +21,8 @@ const Home = () => {
                   ab temporibus nam error? Maiores, enim. Lorem ipsum dolor sit amet, consectetur
                 </p>
           </div>
-          <button className="bg-[#DA324A] read-more">
-            <Link to="/jobSummary">READ MORE</Link>
+          <button className=" read-more border-[#DA324A] border-2 bg-none">
+            <Link to="/jobSummary">DOWNLOAD CV</Link>
           </button>
           <Outlet/>
       </div>

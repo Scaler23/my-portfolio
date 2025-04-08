@@ -1,42 +1,60 @@
 .about{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
    padding-top: 6rem;
    justify-content: space-between;
+   
 
 }
 /* ===================Creative Professional */
-  .about-title{
+  .about-title p{
     font-weight: var(--normal);
-    font-size: 24px ;
-    margin-bottom: 2.5rem;
+    font-size: 40px ;
+    margin-bottom: 2rem;
     letter-spacing:.5rem;
-
-  
+    margin-bottom: 2rem;
+  }
+  .about-skill-title p{
+   font-weight: var(--normal);
+   font-size: 40px ;
+   margin-bottom: 2rem;
+   letter-spacing:.5rem;
+   margin-bottom: 4rem;
+   text-align: center;
   }
   .creative-professional{
-    text-align: end;
-    width: 45%;
-  
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
   }
   .about-info p{
     line-height: 30px;
   }
+  .myImage{
+   width: 50%;
+   padding: 0;
+   margin: 0;
+  }
+  .myImage img{
+   width: 100%;
+  }
+  .aboutDescription{
+   width: 50%;
+  }
  /*================== MY SKIlll ==================== */
- .mySkills{
-    width: 40%;
- }
- 
+
  .skills{
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
  }
+
  .skill-item{
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    margin-bottom: 2rem;
  }
  .skill-icon{
     height: 85px;
@@ -85,11 +103,70 @@
     width: 100%;
     height: 100%;
  }
+ .skill-icon .image-bootstrap{
+   background-image: url(../../images/bootstrap.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   width: 100%;
+   height: 100%;
+}
+.skill-icon .image-tailwinds{
+   background-image: url(../../images/tailwinds.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   width: 100%;
+   height: 100%;
+}
+.skill-icon .image-figma{
+   background-image: url(../../images/figma.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   width: 100%;
+   height: 100%;
+}
+ .skill-typescript .image-typescript{
+   background-image: url(../../images/typeScript.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   width: 100%;
+   height: 100%;
+}
+.skill-adobe .image-adobe{
+   background-image: url(../../images/adobe.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   width: 100%;
+   height: 100%;
+}
+.skill-adobe{
+   height: 85px;
+   width: 85px;
+   background-color: white;
+   border-radius: 50%;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill-typescript{
+   height: 85px;
+   width: 85px;
+   background-color: white;
+   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
  .skill-bar{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    width: 369px;
+    width: 400px;
     height: 15px;
     position: relative;
     margin-bottom: .5rem;
@@ -99,7 +176,7 @@
     border-radius: 10px;
  }
  .skill-bar .javaScript{
-     width: 290px;
+     width: 300px;
      background-color: #EFBE24;
     
  }
@@ -109,19 +186,36 @@
    
 }
  .skill-bar .html{
-    width: 300px;
+    width: 350px;
     background-color: #E44D26;
    
 }
  .skill-bar .css{
-    width: 300px;
+    width: 350px;
     background-color: #264DE4;
-   
 }
-
+.skill-bar .typescript{
+   width: 240px;
+   background-color: #0078CF;
+}
+.skill-bar .bootstrap{
+   width: 250px;
+   background-color: #6E11F4;
+}
+.skill-bar .tailwinds{
+   width: 250px;
+   background-color: #38BDF8;
+}
+.skill-bar .figma{
+   width: 250px;
+   background-color: #F24E1E;
+}
+.skill-bar .adobe{
+   width: 250px;
+   background-color: #6FE045;
+}
  .skillBar-container{
     position: relative;
-
     padding-top: 2rem;
  }
 .javascript-percent::after{
@@ -130,7 +224,6 @@
    color: rgb(255, 255, 255);
     right: 0;
     top: 5px;
-
 }
 .react-percent::after{
     content: "70%";
@@ -154,7 +247,46 @@
    color: rgb(255, 255, 255);
     right: 0;
     top: 5px;
-
 }
+.tailwinds-percent::after{
+   content: "70%";
+   position: absolute;
+  color: rgb(255, 255, 255);
+   right: 0;
+   top: 5px;
+}
+.bootstrap-percent::after{
+   content: "70%";
+   position: absolute;
+  color: rgb(255, 255, 255);
+   right: 0;
+   top: 5px;
+}
+.typescript-percent::after{
+   content: "60%";
+   position: absolute;
+  color: rgb(255, 255, 255);
+   right: 0;
+   top: 5px;
+}
+.figma-percent::after{
+   content: "70%";
+   position: absolute;
+  color: rgb(255, 255, 255);
+   right: 0;
+   top: 5px;
+}
+.adobe-percent::after{
+   content: "70%";
+   position: absolute;
+  color: rgb(255, 255, 255);
+   right: 0;
+   top: 5px;
+}
+
+
+
+
+
 
 

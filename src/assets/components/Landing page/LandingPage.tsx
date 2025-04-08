@@ -55,7 +55,7 @@ const LandingPage = () => {
   <div className="content">
         <Home/>
         <About/>
-
+        <Portfolio/>
         <div className="circle"></div>
   </div>
 

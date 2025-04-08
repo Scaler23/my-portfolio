@@ -20,16 +20,16 @@ main{
 }
 .second-background{
     background-image: linear-gradient(to right, #A81A19,#CF0304);
-    height: 120vh;
+    height: 270vh;
 }
 .third-background{
     background-image: linear-gradient(to bottom,#231F20,#2F2D2E, #2F2D2E,#2F2D2E);
-    height: 120vh;
+    height: 115vh;
     position: relative;
 }
 .content{
     background-image: linear-gradient(to bottom, #28262700, #323031, #231F20, #231F20);
-    height: 165vh;
+    height: 300vh;
     width: 100%;
     border-bottom: none;
     padding: 8rem 6rem;
