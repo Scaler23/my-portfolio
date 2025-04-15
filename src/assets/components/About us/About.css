@@ -4,7 +4,6 @@
    padding-top: 6rem;
    justify-content: space-between;
    
-
 }
 /* ===================Creative Professional */
   .about-title p{
@@ -22,18 +21,18 @@
    margin-bottom: 4rem;
    text-align: center;
   }
+  /* ============About Me ===================== */
   .creative-professional{
     display: flex;
     flex-direction: row;
     margin-bottom: 10rem;
+   justify-content: space-around;
   }
   .about-info p{
     line-height: 30px;
   }
   .myImage{
    width: 50%;
-   padding: 0;
-   margin: 0;
   }
   .myImage img{
    width: 100%;
@@ -41,249 +40,35 @@
   .aboutDescription{
    width: 50%;
   }
- /*================== MY SKIlll ==================== */
 
- .skills{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
- }
-
- .skill-item{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin-bottom: 2rem;
- }
- .skill-icon{
-    height: 85px;
-    width: 85px;
-    background-color: white;
-    border-radius: 50%;
-   padding: 15px 10px 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   
- }
- .skill-icon .image-javaScript{
-    background-image: url(../../images/javaScriptLogo.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
- }
- .skill-icon .image-react{
-    background-image: url(../../images/reactLogo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 100%;
-    height: 100%;
- }
+ @media screen and (max-width: 1200px) {
+   .myImage{
+      width: 100%;
+      margin-bottom: 5rem;
+     }
+     .creative-professional{
+      flex-wrap: wrap;
+    }
+    .aboutDescription{
+      width: 90%;
+     }
  
- .skill-icon .image-html{
-    background-image: url(../../images/HTMLLogo.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    
-    
- }
- 
- .skill-icon .image-css{
-    background-image: url(../../images/CSSLogo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 100%;
-    height: 100%;
- }
- .skill-icon .image-bootstrap{
-   background-image: url(../../images/bootstrap.png);
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: center;
-   width: 100%;
-   height: 100%;
-}
-.skill-icon .image-tailwinds{
-   background-image: url(../../images/tailwinds.png);
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: center;
-   width: 100%;
-   height: 100%;
-}
-.skill-icon .image-figma{
-   background-image: url(../../images/figma.png);
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: center;
-   width: 100%;
-   height: 100%;
-}
- .skill-typescript .image-typescript{
-   background-image: url(../../images/typeScript.png);
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: center;
-   width: 100%;
-   height: 100%;
-}
-.skill-adobe .image-adobe{
-   background-image: url(../../images/adobe.png);
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: center;
-   width: 100%;
-   height: 100%;
-}
-.skill-adobe{
-   height: 85px;
-   width: 85px;
-   background-color: white;
-   border-radius: 50%;
-  padding: 15px 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.skill-typescript{
-   height: 85px;
-   width: 85px;
-   background-color: white;
-   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+     .about-title p{
+      font-size: 40px ;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .about{
+padding-top: 1rem;
 
- .skill-bar{
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    width: 400px;
-    height: 15px;
-    position: relative;
-    margin-bottom: .5rem;
+  }
  }
- .skill-bar .skillBar-color{
-    height: 100%;
-    border-radius: 10px;
- }
- .skill-bar .javaScript{
-     width: 300px;
-     background-color: #EFBE24;
-    
- }
- .skill-bar .react{
-    width: 250px;
-    background-color: #61DAFB;
-   
-}
- .skill-bar .html{
-    width: 350px;
-    background-color: #E44D26;
-   
-}
- .skill-bar .css{
-    width: 350px;
-    background-color: #264DE4;
-}
-.skill-bar .typescript{
-   width: 240px;
-   background-color: #0078CF;
-}
-.skill-bar .bootstrap{
-   width: 250px;
-   background-color: #6E11F4;
-}
-.skill-bar .tailwinds{
-   width: 250px;
-   background-color: #38BDF8;
-}
-.skill-bar .figma{
-   width: 250px;
-   background-color: #F24E1E;
-}
-.skill-bar .adobe{
-   width: 250px;
-   background-color: #6FE045;
-}
- .skillBar-container{
-    position: relative;
-    padding-top: 2rem;
- }
-.javascript-percent::after{
-    content: "80%";
-    position: absolute;
-   color: rgb(255, 255, 255);
-    right: 0;
-    top: 5px;
-}
-.react-percent::after{
-    content: "70%";
-    position: absolute;
-   color: rgb(255, 255, 255);
-    right: 0;
-    top: 5px;
 
-}
-.html-percent::after{
-    content: "90%";
-    position: absolute;
-   color: rgb(255, 255, 255);
-    right: 0;
-    top: 5px;
-
-}
-.css-percent::after{
-    content: "90%";
-    position: absolute;
-   color: rgb(255, 255, 255);
-    right: 0;
-    top: 5px;
-}
-.tailwinds-percent::after{
-   content: "70%";
-   position: absolute;
-  color: rgb(255, 255, 255);
-   right: 0;
-   top: 5px;
-}
-.bootstrap-percent::after{
-   content: "70%";
-   position: absolute;
-  color: rgb(255, 255, 255);
-   right: 0;
-   top: 5px;
-}
-.typescript-percent::after{
-   content: "60%";
-   position: absolute;
-  color: rgb(255, 255, 255);
-   right: 0;
-   top: 5px;
-}
-.figma-percent::after{
-   content: "70%";
-   position: absolute;
-  color: rgb(255, 255, 255);
-   right: 0;
-   top: 5px;
-}
-.adobe-percent::after{
-   content: "70%";
-   position: absolute;
-  color: rgb(255, 255, 255);
-   right: 0;
-   top: 5px;
-}
-
+ @media screen and (max-width: 700px) {
+     .aboutDescription{
+      width: 100%;
+     }
+ }
 
 
 

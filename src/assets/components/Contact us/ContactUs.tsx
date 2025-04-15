@@ -55,7 +55,7 @@ export const ContactUs: React.FC = () => {
         <form ref={form} onSubmit={sendEmail}>
           <div className="row">
           <div className="first-column">
-              <input type="text" name="from_name" placeholder='NAME' className='name'/>
+              <input type="text" name="from_name" placeholder='NAME' className='name' required/>
               <input type="email" name="from_email" placeholder='EMAIL' className='email'/>
           </div>
           <div className="second-column">

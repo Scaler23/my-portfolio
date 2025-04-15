@@ -1,0 +1,528 @@
+.skills{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+   flex-wrap: wrap;
+ }
+
+ .skill-item{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 2rem;
+ }
+ .skill-icon{
+    height: 85px;
+    width: 85px;
+    background-color: white;
+    border-radius: 50%;
+   padding: 15px 10px 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+ }
+ .skill-icon .image-javaScript{
+    background-image: url(../../images/javaScriptLogo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+ }
+ .skill-icon .image-react{
+    background-image: url(../../images/reactLogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+ }
+ 
+ .skill-icon .image-html{
+    background-image: url(../../images/HTMLLogo.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    
+    
+ }
+ 
+ .skill-icon .image-css{
+    background-image: url(../../images/CSSLogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+ }
+ .skill-icon .image-bootstrap{
+   background-image: url(../../images/bootstrap.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   width: 100%;
+   height: 100%;
+}
+.skill-icon .image-tailwinds{
+   background-image: url(../../images/tailwinds.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   width: 100%;
+   height: 100%;
+}
+.skill-icon .image-figma{
+   background-image: url(../../images/figma.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   width: 100%;
+   height: 100%;
+}
+ .skill-typescript .image-typescript{
+   background-image: url(../../images/typeScript.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   width: 100%;
+   height: 100%;
+}
+.skill-adobe .image-adobe{
+   background-image: url(../../images/adobe.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   width: 100%;
+   height: 100%;
+}
+.skill-adobe{
+   height: 85px;
+   width: 85px;
+   background-color: white;
+   border-radius: 50%;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill-typescript{
+   height: 85px;
+   width: 85px;
+   background-color: white;
+   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .skill-bar{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 400px;
+    height: 15px;
+    position: relative;
+    margin-bottom: .5rem;
+ }
+ .skill-bar .skillBar-color{
+    height: 100%;
+    border-radius: 10px;
+ }
+ .skill-bar .javaScript{
+     width: 300px;
+     background-color: #EFBE24;
+    
+ }
+ .skill-bar .react{
+    width: 250px;
+    background-color: #61DAFB;
+}
+ .skill-bar .html{
+    width: 350px;
+    background-color: #E44D26;
+}
+ .skill-bar .css{
+    width: 350px;
+    background-color: #264DE4;
+}
+.skill-bar .typescript{
+   width: 240px;
+   background-color: #0078CF;
+}
+.skill-bar .bootstrap{
+   width: 250px;
+   background-color: #6E11F4;
+}
+.skill-bar .tailwinds{
+   width: 250px;
+   background-color: #38BDF8;
+}
+.skill-bar .figma{
+   width: 250px;
+   background-color: #F24E1E;
+}
+.skill-bar .adobe{
+   width: 250px;
+   background-color: #6FE045;
+}
+ .skillBar-container{
+    position: relative;
+    padding-top: 2rem;
+ }
+.javascript-percent::after{
+    content: "80%";
+    position: absolute;
+   color: rgb(255, 255, 255);
+    right: 0;
+    top: 5px;
+}
+.react-percent::after{
+    content: "70%";
+    position: absolute;
+   color: rgb(255, 255, 255);
+    right: 0;
+    top: 5px;
+
+}
+.html-percent::after{
+    content: "90%";
+    position: absolute;
+   color: rgb(255, 255, 255);
+    right: 0;
+    top: 5px;
+
+}
+.css-percent::after{
+    content: "90%";
+    position: absolute;
+   color: rgb(255, 255, 255);
+    right: 0;
+    top: 5px;
+}
+.tailwinds-percent::after{
+   content: "70%";
+   position: absolute;
+  color: rgb(255, 255, 255);
+   right: 0;
+   top: 5px;
+}
+.bootstrap-percent::after{
+   content: "70%";
+   position: absolute;
+  color: rgb(255, 255, 255);
+   right: 0;
+   top: 5px;
+}
+.typescript-percent::after{
+   content: "60%";
+   position: absolute;
+  color: rgb(255, 255, 255);
+   right: 0;
+   top: 5px;
+}
+.figma-percent::after{
+   content: "70%";
+   position: absolute;
+  color: rgb(255, 255, 255);
+   right: 0;
+   top: 5px;
+}
+.adobe-percent::after{
+   content: "70%";
+   position: absolute;
+  color: rgb(255, 255, 255);
+   right: 0;
+   top: 5px;
+}
+
+
+   @media screen and (max-width:1700px) {
+         .skill-bar{
+            width: 350px; 
+         }
+         .skill-bar .javaScript{
+            width: 270px; 
+        }
+        .skill-bar .react{
+           width: 220px;
+       }
+        .skill-bar .html{
+           width: 320px;
+       }
+        .skill-bar .css{
+           width: 320px;
+       }
+       .skill-bar .typescript{
+          width: 210px;
+       }
+       .skill-bar .bootstrap{
+          width: 220px;
+       }
+       .skill-bar .tailwinds{
+          width: 220px;
+       }
+       .skill-bar .figma{
+          width: 220px;
+       }
+       .skill-bar .adobe{
+          width: 220px;
+         
+       }
+   }
+    @media screen and (max-width:1540px) {
+         .skill-bar{
+            width: 270px;
+            height: 12px;
+         }
+         .skill-item{
+            margin-bottom: 1rem;
+         }
+         .skill-icon{
+            height: 70px;
+            width: 70px;
+            margin-top: 1rem;
+         }
+         .skill-adobe{
+            height: 70px;
+            width: 70px;
+            margin-top: 1rem;
+           
+         }
+         .skill-typescript{
+            height: 70px;
+            width: 70px;
+            margin-top: 1rem;
+         } 
+         .skill-bar .javaScript{
+            width: 230px;
+        }
+        .skill-bar .react{
+           width: 180px;
+       }
+        .skill-bar .html{
+           width: 240px;
+       }
+        .skill-bar .css{
+           width: 240px;
+       }
+       .skill-bar .typescript{
+          width: 170px;
+       }
+       .skill-bar .bootstrap{
+          width: 170px;
+       }
+       .skill-bar .tailwinds{
+          width: 170px;
+       }
+       .skill-bar .figma{
+          width: 170px;
+       }
+       .skill-bar .adobe{
+          width: 170px;
+       }
+   }
+
+   @media screen and (max-width:1300px) {
+      .skill-bar{
+         width: 250px;
+         height: 12px;
+      }
+      .skill-item{
+         gap: 1rem;
+         margin-bottom: 1rem;
+      }
+      .skill-icon{
+         height: 70px;
+         width: 70px;
+         margin-top: 1rem;
+      }
+      .skill-adobe{
+         height: 70px;
+         width: 70px;
+         margin-top: 1rem;
+        
+      }
+      .skill-typescript{
+         height: 70px;
+         width: 70px;
+         margin-top: 1rem;
+      } 
+      .skill-bar .javaScript{
+         width: 200px;
+     }
+     .skill-bar .react{
+        width: 150px;
+    }
+     .skill-bar .html{
+        width: 210px;
+    }
+     .skill-bar .css{
+        width: 210px;
+    }
+    .skill-bar .typescript{
+       width: 140px;
+    }
+    .skill-bar .bootstrap{
+       width: 140px;
+    }
+    .skill-bar .tailwinds{
+       width: 140px;
+    }
+    .skill-bar .figma{
+       width: 140px;
+    }
+    .skill-bar .adobe{
+       width: 140px;
+    }
+}
+@media screen and (max-width:1200px) {
+   .skill-item{
+      gap: 2rem;
+      margin-bottom: 1rem;
+   }
+   .skills{
+      justify-content: center;
+      align-items: center;
+   }
+   .skill-icon{
+      height: 85px;
+    width: 85px;
+
+   }
+   .skill-adobe{
+      height: 85px;
+      width: 85px;
+      margin-top: 2rem;
+     
+   }
+   .skill-typescript{
+      height: 85px;
+      width: 85px;
+      margin-top: 2rem;
+   } 
+   .skill-adobe{
+      height: 85px;
+      width: 85px;
+      background-color: white;
+      border-radius: 50%;
+     padding: 15px 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .skill-typescript{
+      height: 85px;
+      width: 85px;
+      background-color: white;
+      border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+    .skill-bar{
+       background-color: rgb(255, 255, 255);
+       border-radius: 10px;
+       width: 400px;
+       height: 15px;
+       position: relative;
+       margin-bottom: .5rem;
+    }
+    .skill-bar .skillBar-color{
+       height: 100%;
+       border-radius: 10px;
+    }
+    .skill-bar .javaScript{
+        width: 300px;
+        background-color: #EFBE24;
+       
+    }
+    .skill-bar .react{
+       width: 250px;
+       background-color: #61DAFB;
+   }
+    .skill-bar .html{
+       width: 350px;
+       background-color: #E44D26;
+   }
+    .skill-bar .css{
+       width: 350px;
+       background-color: #264DE4;
+   }
+   .skill-bar .typescript{
+      width: 240px;
+      background-color: #0078CF;
+   }
+   .skill-bar .bootstrap{
+      width: 250px;
+      background-color: #6E11F4;
+   }
+   .skill-bar .tailwinds{
+      width: 250px;
+      background-color: #38BDF8;
+   }
+   .skill-bar .figma{
+      width: 250px;
+      background-color: #F24E1E;
+   }
+   .skill-bar .adobe{
+      width: 250px;
+      background-color: #6FE045;
+   }
+}
+@media screen and (max-width:600px) {
+   .skill-bar{
+      width: 250px;
+      height: 12px;
+   }
+   .skill-item{
+      gap: 1rem;
+      margin-bottom: 1rem;
+   }
+   .skill-icon{
+      height: 70px;
+      width: 70px;
+      margin-top: 1rem;
+   }
+   .skill-adobe{
+      height: 70px;
+      width: 70px;
+      margin-top: 1rem;
+     
+   }
+   .skill-typescript{
+      height: 70px;
+      width: 70px;
+      margin-top: 1rem;
+   } 
+   .skill-bar .javaScript{
+      width: 200px;
+  }
+  .skill-bar .react{
+     width: 150px;
+ }
+  .skill-bar .html{
+     width: 210px;
+ }
+  .skill-bar .css{
+     width: 210px;
+ }
+ .skill-bar .typescript{
+    width: 140px;
+ }
+ .skill-bar .bootstrap{
+    width: 140px;
+ }
+ .skill-bar .tailwinds{
+    width: 140px;
+ }
+ .skill-bar .figma{
+    width: 140px;
+ }
+ .skill-bar .adobe{
+    width: 140px;
+ }
+}

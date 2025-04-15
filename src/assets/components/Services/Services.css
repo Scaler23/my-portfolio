@@ -1,9 +1,6 @@
 .services{
-    display: flex;
-    flex-direction: column;
-    padding: 3rem 5rem;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+    padding: 3rem 0rem;
 }
 .services p{
     font-weight: var(--normal);
@@ -13,8 +10,11 @@
 }
 .work-button{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     gap: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
 }
 .work-button button{
     background-color: #D9D9D9;
@@ -31,12 +31,67 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 3rem 6rem;
-    gap: 3rem;
-   justify-content: center;
-   align-items: center;
- 
+    padding: 3rem 10rem;
+    gap: 4rem;
+ justify-content: space-around;
+/* background-color: azure; */
 }
 .show-work img{
     width: 45%;
+}
+@media screen and (max-width:1600px) {
+
+    .show-work{
+        padding: 3rem 8rem;
+    }
+}
+@media screen and (max-width:1400px) {
+
+    .show-work{
+        padding: 3rem 5rem;
+    }
+}
+@media screen and (max-width:1200px) {
+    .work-button{
+        gap: 1rem;
+    }
+    .show-work{
+        padding: 3rem 3rem;
+    }
+
+}
+@media screen and (max-width:1050px) {
+    .show-work{
+        padding: 3rem 2rem;
+    }
+}
+@media screen and (max-width:990px) {
+    .show-work img{
+        width: 70%;
+    }
+}
+@media screen and (max-width:810px) {
+    .work-button button{
+        width: 180px;
+    }
+    .show-work img{
+        width: 80%;
+    }
+ 
+}
+@media screen and (max-width:700px) {
+    .work-button button{
+        width: 130px;
+    }
+    .show-work img{
+        width: 80%;
+    }
+}
+@media screen and (max-width:530px) {
+    .show-work img{
+        width: 100%;
+    }
+    .work-button button{
+        width: 170px;
+    }
 }

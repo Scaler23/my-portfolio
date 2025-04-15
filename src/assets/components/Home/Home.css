@@ -6,7 +6,6 @@
     align-items: center;
     width: 35%;
     margin-bottom: 5rem;
-
 }
 
 .title h1{
@@ -31,8 +30,41 @@
     padding: 5px 15px;
     font-size: var(--normal);
     margin-top: 2rem;
+  
 }
 .info{
     margin-top:2rem ;
-    text-align: center;
+
+    text-align: start;
+}
+
+@media screen and (max-width:1500px) {
+    .home{
+        width: 50%;
+    }
+}
+@media screen and (max-width:1400px) {
+    .home{
+        width: 60%;
+    }
+}
+@media screen and (max-width:960px) {
+    .home{
+        width: 100%;
+    }
+}
+@media screen and (max-width:570px) {
+    .home{
+        width: 100%;
+    }
+    .title h1 span:last-child {
+        font-size: 55px;
+    }
+    .title h1 span{
+        font-size: 40px;
+    }
+    .title h1{
+
+        line-height: 3rem;
+    }
 }

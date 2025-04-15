@@ -17,19 +17,19 @@ main{
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
+    background-position: center;
 }
 .second-background{
     background-image: linear-gradient(to right, #A81A19,#CF0304);
     height: 270vh;
 }
 .third-background{
-    background-image: linear-gradient(to bottom,#231F20,#2F2D2E, #2F2D2E,#2F2D2E);
+    background-image: linear-gradient(to bottom,#2F2D2E,#2F2D2E,#2F2D2E,#2F2D2E,#2F2D2E,#2F2D2E,#231F20);
     height: 115vh;
     position: relative;
 }
 .content{
     background-image: linear-gradient(to bottom, #28262700, #323031, #231F20, #231F20);
-    height: 300vh;
     width: 100%;
     border-bottom: none;
     padding: 8rem 6rem;
@@ -81,31 +81,68 @@ main{
 
 
 /* =================== NAVIGATION CSS ===================*/
-
+ /* .logo{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 50%;
+} */
+.logo{
+    height: 120px;
+    width: 120px;
+}
 
 
 .nav-container{
     display: flex;
-    justify-content: space-around;
+   justify-content: space-between;
     align-items: center;
-    padding: 3rem 0;
-   
+    background-color: white;
+    padding: 0 3rem;
+    height: 90px;
+    position: relative;
+    
 }
 .nav-list{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
+  display: none;
+  visibility: none;
+  justify-content: center;
+  align-items: center;
+  color:#292929;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  gap: 5rem;
+  width: 70%;
+
 }
 .nav-list li a{
     font-size: 24px;
     font-weight: var(--bold);
+    padding: 10px 0;
+    position: relative;
+}
+.nav-list li a::before{
+    content: "";
+    height: 4px ;
+    width: 100%;
+    background-color: #DA324A;
+    position: absolute;
+    left: 0;
+    transition: 0.2s ease-in-out;
+    transform: scaleX(0);
+    bottom: -5px;
+    border-radius: 5px;
+}
+.nav-list li a:hover::before{
+    transform: scaleX(1);
 }
 
 .myPicture{
     position: absolute;
     bottom: 0;
     right: -8rem;
-
     width: 50%;
     height: 55rem;
     padding: 0;
@@ -115,6 +152,108 @@ main{
    width: 100%;
    height: 100%;
 }
+/* ================== BURGER NAV ===================*/
+.burger{
+    visibility: visible;
+    font-size: 40px;
+    color: black;
+    padding: 5px;
+}
+.burger:hover{
+    background-color: #d4d1d1;
+}
+.nav-list.show{
+position: absolute;
+    top: 90px;
+    display: block;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #323031;
+    width: 100%;
+    color: white;
+    text-align: center;
+    z-index: 100;
+}
+.nav-list.show li a{
+    font-size: 24px;   
+}
+.nav-list.show li:hover{
+   background-color: rgb(174, 174, 174); 
+
+}
+.nav-list.show li{
+    font-size: 24px;
+   padding: 5px 0;
+}
+.nav-list.show li a:hover::before{
+    transform: scaleX(0);
+
+}
+/* ================= Nav Responsiveness =================== */
+@media screen and (max-width:1400px) {
+    .nav-list li a{
+        font-size: 24px;
+    }
+    .nav-list{
+        gap: 3rem;
+    }
+}
+@media screen and (max-width:1200px) {
+    .nav-list li a{
+        font-size: 20px;
+    }
+    .nav-list{
+        gap: 2rem;
+    }
+    .third-background{
+        height: 230vh;
+        position: relative;
+    }
+
+}
+@media screen and (max-width:1140px) {
+    .third-background{
+        height: 260vh;
+    }
+
+}
+@media screen and (max-width:1000px){
+    .content{
+        padding: 8rem 3rem;
+    }
+    .third-background{
+        height: 350vh;
+    }
+
+}
+@media screen and (min-width:900px) {
+    .nav-list{
+        visibility: visible;
+      display: flex;
+    }
+    .burger{
+        visibility: hidden;
+    }
+}
+
+
+
+@media screen and (max-width:700px){
+
+    main{
+        width: 100%;
+}
+.content{
+    border: none;
+}
+main{
+box-shadow: none;
+}
+.third-background{
+    height: 340vh;
+}
+}
+
 /* ======================== MOUSE ======================== */
  .mouse-container{
     position: fixed;
@@ -161,8 +300,8 @@ main{
 .services-content{
     background-color: #B6B6B6;
     width: 100%;
-    height: 95vh;
     border: 1px solid rgba(255, 255, 255, 0.244);
     border-top: none;
-
 }
+/* =======================BURGER MENU ===================== */
+
