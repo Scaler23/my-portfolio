@@ -1,43 +1,33 @@
 import "./Home.css";
-import { Link, Outlet } from "react-router-dom";
-import DownloadResume from "./DownloadResume";
 import { motion } from "motion/react";
 import Typewriter from "./Typewriter";
-import { useEffect, useState } from "react";
+
+import { IoIosArrowRoundDown } from "react-icons/io";
+
 const Home = () => {
   
 
   
   return (
     <div className="home" id="home">
-      <div className="title">
-        <h1>
-          <motion.span>I AM</motion.span> <br />
-          <Typewriter text="JR. FRONT-END" /> <br />
-          <motion.span>DEVELOPER</motion.span>
-        </h1>
-      </div>
-      <div className="info">
-        <motion.p
-          viewport={{
-            amount: 0.5,
-          }}
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, y: -100 }}
-          transition={{ duration: 0.5, ease: "easeInOut"}}
-        >
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
-          perferendis porro eaque possimus nihil, ab temporibus nam error?
-          Maiores, enim. Lorem ipsum dolor sit amet, consectetur Lorem ipsum,
-          dolor sit amet consectetur adipisicing elit. Sequi perferendis porro
-          eaque possimus nihil, ab temporibus nam error? Maiores, enim. Lorem
-          ipsum dolor sit amet, consectetur
-        </motion.p>
+    
+ 
+       
+          <motion.span className="font-light text-[64px]">Hello, I’m <span className="myName text-[#FFF600]">Johnbert.</span></motion.span> <br />
+          <div className="font-light text-[48px]">
+          <Typewriter 
+          text="I am a Jr. front-end web developer ."  /> <span className="type-line">|</span><br />
+          </div>
+          <a href="#about"  className=" view-work-button ">
+            <button className="text-[25px] font-semibold border-[#609C90] border-3 bg-white text-[#455B60] 
+             " style={{
+              marginTop: "2rem"
+             }}>View my work <IoIosArrowRoundDown className="inline-block " /></button>
+          </a>
+
+
       </div>
 
-      <DownloadResume />
-    </div>
   );
 };
 

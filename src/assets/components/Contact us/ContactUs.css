@@ -2,12 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 6rem;
-   left: 50%;
-   transform: translate(-50%);
    width: 100%;
    flex-direction: column;
+padding-top: 10rem;
+position: absolute;
+padding-bottom: 10rem;
 }
 .contact p{
     font-size: 24px;
@@ -43,7 +42,7 @@
     width: 50%;
 }
 .first-column input{
-    background-color: #8E8E8E;
+    background-color: #6E959E;
     padding: 1rem 1.5rem;
     height: 57px;
     border-radius: 10px;
@@ -56,7 +55,7 @@
 .message{
     width: 100%;
     resize: none;
-    background-color: #8E8E8E;
+    background-color: #6E959E;
     height: 100%;
     padding: 1rem 1.5rem;
     border-radius: 10px;
@@ -69,8 +68,9 @@
 .submit{
     width: 162px;
     height: 55px;
-    background-color: #DA324A;
+    background-color: #ffffff;
     font-size: 24px;
+    color: #455B60;
     font-weight: var(--normal);
 }
 @media screen and (max-width:1000px){

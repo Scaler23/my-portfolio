@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const Typewriter = ({
   text,
-  speed = 100,
+  speed = 50,
   pause = 1000, // pause before deleting
 }: {
   text: string;

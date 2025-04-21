@@ -1,68 +1,43 @@
-.main-container {
-  position: relative;
+
+.main-container{
+position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+   width: 71%;
+  
+   margin-top: 12rem;
+   box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
+   -webkit-box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
+   -moz-box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
 }
-main {
-  position: absolute;
-  width: 77%;
-  top: 18rem;
-  left: 50%;
-  transform: translate(-50%);
-  box-shadow: -10px 9px 14px 1px rgba(0, 0, 0, 0.74);
-  -webkit-box-shadow: -10px 9px 14px 1px rgba(0, 0, 0, 0.74);
-  -moz-box-shadow: -10px 9px 14px 1px rgba(0, 0, 0, 0.74);
-}
-.first-background {
-  background-image: url(../../images/mainbackground.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  position: relative;
-  background-position: center;
-}
-.second-background {
-  background-image: linear-gradient(to right, #a81a19, #cf0304);
-  height: 270vh;
-}
-.third-background {
-  background-image: linear-gradient(
-    to bottom,
-    #2f2d2e,
-    #2f2d2e,
-    #2f2d2e,
-    #2f2d2e,
-    #2f2d2e,
-    #2f2d2e,
-    #231f20
-  );
-  height: 115vh;
-  position: relative;
-}
-.content {
-  background-image: linear-gradient(
-    to bottom,
-    #28262700,
-    #323031,
-    #231f20,
-    #231f20
-  );
-  width: 100%;
+
+.hoabpo{
+  border: 1px solid #d4d1d1;
   border-bottom: none;
-  padding: 8rem 6rem;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ffffffb7;
-  position: relative;
+  padding-bottom: 10rem;
+  background-image: linear-gradient(to bottom, #a6a6a600, #595f62ab, #42454583, #2B2B2B);
 }
-.content .circle {
+.myPicture{
+    position: absolute;
+    right: -150px;
+    width: 37rem;
+    top: 45px;
+
+}
+.myPicture img{
+width: 100%;
+}
+.circle-top {
   position: absolute;
   width: 120px;
   height: 116px;
   border-radius: 50%;
-  background-color: #b6b6b6;
-  bottom: -3.7rem;
+  background-color: #B6B6B6;
+bottom: 52rem;
   left: 50%;
   transform: translate(-50%);
-  clip-path: inset(0 0 50% 0); /* Cuts the bottom half */
+  clip-path: inset(0 0 40% 0); /* Cuts the bottom half */
+  z-index: 100;
 }
 .services-content .circle {
   position: absolute;
@@ -72,7 +47,7 @@ main {
   border-top-right-radius: 60%;
   border-bottom-right-radius: none;
   border-bottom-left-radius: none;
-  background-color: #2f2d2e;
+  background-color: #455C60;
   bottom: -58px;
   left: 50%;
   transform: translate(-50%);
@@ -83,7 +58,7 @@ main {
 }
 .services-content .rectangle {
   position: absolute;
-  background-color: #2f2d2e;
+  background-color: #455C60;
   transform: translate(-50%);
   left: 50%;
   width: 120px;
@@ -101,31 +76,80 @@ main {
     border-radius: 50%;
 } */
 .logo {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
 }
 
+/* ====================== SOCIAL MEDIA LOGOS =================== */
+.logos{
+  padding: 10px;
+  background-color: #193030;
+  position: fixed;
+  left: 80px;
+  top: 350px;
+  border-radius: 30px;
+
+}
+.linkin{
+  border-radius: 50%;
+  height: 39px;
+    width: 39px;
+  background-color: #0066C8;
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.facebook{
+  border-radius: 50%;
+  height: 39px;
+    width: 39px;
+  background-color: #0D8BF1;
+ font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.gitHub{
+  border-radius: 50%;
+  height: 39px;
+    width: 39px;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  padding-top: 8px;
+  color: rgb(255, 255, 255);
+
+}
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 0 3rem;
-  height: 90px;
-  position: relative;
+  padding:  0rem 1rem 0rem 2rem;
 }
 .nav-list {
   display: none;
   visibility: none;
   justify-content: center;
   align-items: center;
-  color: #292929;
+  color: #455B60;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
   gap: 5rem;
   width: 70%;
+
+
 }
+
+
+
 .nav-list li a {
   font-size: 24px;
   font-weight: var(--bold);
@@ -136,58 +160,51 @@ main {
   content: "";
   height: 4px;
   width: 100%;
-  background-color: #da324a;
+  background-color: #95d0d3;
   position: absolute;
   left: 0;
   transition: 0.2s ease-in-out;
   transform: scaleX(0);
   bottom: -5px;
   border-radius: 5px;
-}
+} 
 .nav-list li a:hover::before {
   transform: scaleX(1);
 }
 
-.myPicture {
-  position: absolute;
-  bottom: 0;
-  right: -8rem;
-  width: 45%;
-  height: 50rem;
-  padding: 0;
-  margin: 0;
-}
-.myPicture img {
-  width: 100%;
-  height: 100%;
-}
+
 /* ================== BURGER NAV ===================*/
 .burger {
   visibility: visible;
   font-size: 40px;
-  color: black;
+  color: #455B60;
   padding: 5px;
+  
 }
 .burger:hover {
   background-color: #d4d1d1;
 }
 .nav-list.show {
-  position: absolute;
-  top: 90px;
+  top: 130px;
   display: block;
   left: 50%;
   transform: translate(-50%);
-  background-color: #323031;
+  background-color: #32534b;
   width: 100%;
   color: white;
   text-align: center;
+
   z-index: 100;
 }
+
+
+
 .nav-list.show li a {
   font-size: 24px;
 }
 .nav-list.show li:hover {
-  background-color: rgb(174, 174, 174);
+  background-color: rgb(93, 163, 136);
+  transition: 0.3s ease-in-out;
 }
 .nav-list.show li {
   font-size: 24px;
@@ -196,16 +213,11 @@ main {
 .nav-list.show li a:hover::before {
   transform: scaleX(0);
 }
+
 /* ================= Nav Responsiveness =================== */
-@media screen and (max-width: 1600px) {
-  .myPicture {
-    width: 50%;
-  }
-  .myPicture img {
-    width: 100%;
-    height: 100%;
-  }
-}
+
+
+
 @media screen and (max-width: 1400px) {
   .nav-list li a {
     font-size: 24px;
@@ -213,10 +225,8 @@ main {
   .nav-list {
     gap: 3rem;
   }
-  .myPicture {
-    width: 55%;
-  }
 }
+
 @media screen and (max-width: 1200px) {
   .nav-list li a {
     font-size: 20px;
@@ -224,31 +234,20 @@ main {
   .nav-list {
     gap: 2rem;
   }
-  .third-background {
-    height: 230vh;
-    position: relative;
-  }
-  .myPicture {
-    width: 60%;
-  }
 }
-@media screen and (max-width: 1140px) {
-  .third-background {
-    height: 260vh;
-  }
-}
+
 @media screen and (max-width: 1000px) {
   .content {
     padding: 8rem 3rem;
   }
-  .third-background {
-    height: 350vh;
+
+  main {
+    width: 100%;
   }
-}
-@media screen and (max-width: 960px) {
-  .myPicture {
-    width: 0%;
+  .content {
+    border: none;
   }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -263,20 +262,12 @@ main {
 
 @media screen and (max-width: 700px) {
   main {
-    width: 100%;
     box-shadow: none;
   }
-  .content {
-    border: none;
-   padding-top: 3rem;
-  }
 
-  .third-background {
-    height: 340vh;
-  }
 }
 
-/* ======================== MOUSE ======================== */
+
 .mouse-container {
   position: fixed;
   bottom: 2rem;
@@ -320,8 +311,7 @@ main {
 
 .services-content {
   background-color: #b6b6b6;
-  width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.244);
-  border-top: none;
+width: 100%;
+
 }
 /* =======================BURGER MENU ===================== */

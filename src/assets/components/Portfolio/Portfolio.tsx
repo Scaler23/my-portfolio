@@ -1,6 +1,7 @@
 import "./Portfolio.css"
 import pc from "../../images/image services/pcsetup.jpg"
 import laptop from "../../images/image services/latop2.jpg"
+import {motion} from "motion/react"
 const Portfolio = () => {
   return (
     <div className="Portfolio" id="portfolio">
@@ -8,9 +9,31 @@ const Portfolio = () => {
             <p>MY PORTFOLIO</p>
           </div>
           <div className="project">
-            <img src={pc} alt=""       style={{height: "270px"}} />
-            <img src={laptop} alt=""       style={{height: "270px"}}/>
-          </div> 
+            <motion.div className="port-wrapper"
+            initial={{
+              width: "60%", 
+              height:"60%"
+            }}
+            whileHover={{
+             width: "50%",
+             height: "55%",
+             marginLeft: "4rem",
+            }}
+            exit={{
+    width: "70%", 
+              height:"70%"
+            }}
+      >
+            <img src={pc} alt=""/>
+            </motion.div>
+           
+         
+          <div className="port-info">
+            <p className="port-title">SCALER|CODE</p>
+            <p className="port-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            </div> 
+          </div>
     </div>
   )
 }
