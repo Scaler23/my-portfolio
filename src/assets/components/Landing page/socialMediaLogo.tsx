@@ -8,12 +8,12 @@ const SocialLogo = () =>{
         <div className="logos">
         <div className="logo-wrapper">
           <div className="linkin">
-            <a href="">
+            <a href="https://www.linkedin.com/in/johnbert-yabut-30136424b/">
               <FaLinkedinIn />
             </a>
           </div>
           <div className="gitHub">
-            <a href="https://github.com/settings/profile">
+            <a href="https://github.com/Scaler23/my-portfolio.git">
             <PiGithubLogoFill />
             </a>
           </div>

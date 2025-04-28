@@ -69,6 +69,7 @@ const About = () => {
       </div>
 
       <MySkills />
+  
     </div>
   );
 };

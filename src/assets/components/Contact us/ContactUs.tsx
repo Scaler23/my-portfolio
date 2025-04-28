@@ -4,13 +4,9 @@ import { notifyAlert, notifyErr, notifySuccess } from "./ToastifyNotification";
 import { motion } from "motion/react";
 import { ToastContainer } from "react-toastify";
 import "./ContactUs.css";
-import SocialLogo from "../Landing page/socialMediaLogo";
-import Facebook from "../../images/facebook.png";
-import Linkin from "../../images/linkin.webp";
-import Github from "../../images/github.png";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { PiGithubLogoFill } from "react-icons/pi";
-import { FiGithub } from "react-icons/fi";
+
 
 
 export const ContactUs: React.FC = () => {
@@ -133,16 +129,14 @@ export const ContactUs: React.FC = () => {
       </form>
       {isWidth &&
       <div className="logosTwo">
-      {/* <h1>{width}: width</h1>
-        <h1>{height}: height</h1> */}
       <div className="logo-wrapperTwo">
         <div className="linkin">
-          <a href="">
+          <a href="https://www.linkedin.com/in/johnbert-yabut-30136424b/">
             <FaLinkedinIn />
           </a>
         </div>
         <div className="gitHub">
-          <a href="https://github.com/settings/profile">
+          <a href="https://github.com/Scaler23/my-portfolio.git">
           <PiGithubLogoFill />
           </a>
         </div>
@@ -155,8 +149,18 @@ export const ContactUs: React.FC = () => {
       </div>
     </div>  
       }
-       
-      <ToastContainer />
+      <div className="copy">
+      &copy; Johnbert 2025.
+      </div>
+        
+      <ToastContainer
+  toastClassName="custom-toast"
+        style={
+          {
+            position:"fixed"
+          }
+        }
+         />
     </div>
   );
 };

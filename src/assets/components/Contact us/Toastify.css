@@ -48,3 +48,56 @@
     /* used to control the opacity of the progress trail */
     --toastify-color-progress-bgo: 0.2;
   }
+  .alert{
+  position: fixed;
+  bottom: -40rem;
+  right: -10rem;
+  }
+
+  .success{
+    position: fixed;
+    bottom: -40rem;
+    right: -10rem;
+    border-left: 5px solid #5AAD95;
+  }
+  @media screen and (max-width:1200px){
+    .alert{
+      position: fixed;
+      bottom: -50rem;
+      right: -7rem;
+      }
+      .success{
+      position: fixed;
+      bottom: -50rem;
+      right: -7rem;
+      }
+  }
+  @media screen and (max-width:1000px){
+    .alert{
+      position: fixed;
+      bottom: -60rem;
+      right: 2rem;
+      width: 90%;
+      }
+      .success{
+        position: fixed;
+        bottom: -60rem;
+        right: 2rem;
+        width: 90%;
+      }
+  } 
+  
+  @media screen and (max-width:480px){
+    .alert{
+     position: fixed;
+      bottom: -410rem; 
+      right: 2rem;
+      width: 90%;
+      }
+      .success{
+        position: fixed;
+        bottom: -410rem; 
+        right: 2rem;
+        width: 90%;
+      }
+  }
