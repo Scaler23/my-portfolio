@@ -9,46 +9,38 @@ import Mouse from "./Mouse";
 import Logo from "../../images/LOGO.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from "react";
-import Facebook from "../../images/facebook.png";
-import Linkin from "../../images/linkin.webp";
-import Github from "../../images/github.png";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { PiGithubLogoFill } from "react-icons/pi";
-import { FiGithub } from "react-icons/fi";
+import SocialLogo from "./socialMediaLogo";
 const LandingPage = () => {
   const [showNav, setShowNav] = useState<boolean>(false);
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
-  const [width, setWidth] = useState(window.innerWidth);
-  const [height, setHeight] = useState(window.innerHeight);
+  const [isShowSocialLogo, setShowSocialLogo] = useState<boolean>(false)
+  useEffect(() => {
+    const handleWidth = () => {
+      if (window.innerWidth < 1300) {
+        setShowSocialLogo(false);
+      } else {
+        setShowSocialLogo(true);
+      }
+    };
+
+    // Call once on mount
+    handleWidth();
+
+    window.addEventListener("resize", handleWidth);
+    return () => window.removeEventListener("resize", handleWidth);
+  }, []);
+
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 960) {
         setShowNav(false); // Auto-hide nav on desktop
       }
     };
-
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  useEffect(() => {
-    const handleHeight = () => {
-      setHeight(window.innerHeight);
-    };
-    window.addEventListener("resize", handleHeight);
-    return () => {
-      window.addEventListener("resize", handleHeight);
-    };
-  }, [height]);
-  useEffect(() => {
-    const handleSize = () => {
-      setWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleSize);
-    return () => {
-      window.addEventListener("resize", handleSize);
-    };
-  }, [width]);
+  
   return (
     <>
       {/* ============= NAVIGATION ============ */}
@@ -85,31 +77,12 @@ const LandingPage = () => {
       {/* ============= MOUSE================ */}
       <Mouse />
       {/* ====================== MEDIA LOGOS ================== */}
-      <div className="logos">
-        {/* <h1>{width}: width</h1>
-          <h1>{height}: height</h1> */}
-        <div className="logo-wrapper">
-          <div className="linkin">
-            <a href="">
-              <FaLinkedinIn />
-            </a>
-          </div>
-          <div className="gitHub">
-            <a href="https://github.com/settings/profile">
-            <PiGithubLogoFill />
-            </a>
-          </div>
-
-          <div className="facebook">
-            <a href="https://www.facebook.com/johnbertyabut2222">
-              <FaFacebookF />
-            </a>
-          </div>
-        </div>
-      </div>
+        {isShowSocialLogo && <SocialLogo />}
       {/* ============= MAIN CONTENT ====================== */}
       <div className="main-container">
+
         <div className="hoabpo">
+   
           {/* =================== HOME ===================== */}
 
           {/* MY PICTURE */}
@@ -118,7 +91,6 @@ const LandingPage = () => {
           </div>
 
           <div className="first-background" id="home">
-            {/* MY PICTURE */}
             <Home />
           </div>
 
@@ -127,6 +99,7 @@ const LandingPage = () => {
             <div className="content">
               <About />
               <Portfolio />
+              
             </div>
           </div>
           <div className="circle-top"></div>
@@ -141,9 +114,11 @@ const LandingPage = () => {
         </div>
 
         <ContactUs />
-
+ 
         {/*========================== CONTACT ========================= */}
+   
       </div>
+     
     </>
   );
 };

@@ -11,11 +11,11 @@ import './Toastify.css'
         draggable: true,
         progress: undefined,
         theme: "dark",
-        icon: <FaCheckCircle color="#8E8E8E" size={30} />,
+        className: "success",
+        icon: <FaCheckCircle color="#5AAD95" size={30} />,
         style:{
-            borderLeft: "5px solid #8E8E8E"
+            borderLeft: "5px solid #5AAD95",
         }
-
         });
 }
 
@@ -29,6 +29,12 @@ export const notifyAlert = () =>{
     draggable: true,
     progress: undefined,
     theme: "light",
+    className: "alert",
+ style:{
+  position: "fixed",
+  bottom: "-40rem",
+  right: "-10rem"
+ }
     });
 }
 export const notifyErr = () =>{
@@ -41,5 +47,6 @@ export const notifyErr = () =>{
     draggable: true,
     progress: undefined,
     theme: "light",
+    className: "error",
     });
 }

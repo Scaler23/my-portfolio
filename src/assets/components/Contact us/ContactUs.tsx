@@ -1,11 +1,33 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { notifyAlert, notifyErr, notifySuccess } from "./ToastifyNotification";
 import { motion } from "motion/react";
 import { ToastContainer } from "react-toastify";
 import "./ContactUs.css";
+import SocialLogo from "../Landing page/socialMediaLogo";
+import Facebook from "../../images/facebook.png";
+import Linkin from "../../images/linkin.webp";
+import Github from "../../images/github.png";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { PiGithubLogoFill } from "react-icons/pi";
+import { FiGithub } from "react-icons/fi";
+
 
 export const ContactUs: React.FC = () => {
+  const [isWidth, setWidth] = useState<boolean>(false);
+
+  useEffect(()=>{
+        const HandWidth = () =>{
+            if(window.innerWidth < 1300){
+              setWidth(true)
+            }else{
+              setWidth(false)
+            }
+        }
+        HandWidth();
+        window.addEventListener("resize", HandWidth);
+        return () => window.removeEventListener("resize", HandWidth);
+  },[])
   const form = useRef<HTMLFormElement>(null);
   const [isSending, setIsSending] = useState<boolean>(false);
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -109,6 +131,31 @@ export const ContactUs: React.FC = () => {
           transition={{ duration: 0.5 }}
         />
       </form>
+      {isWidth &&
+      <div className="logosTwo">
+      {/* <h1>{width}: width</h1>
+        <h1>{height}: height</h1> */}
+      <div className="logo-wrapperTwo">
+        <div className="linkin">
+          <a href="">
+            <FaLinkedinIn />
+          </a>
+        </div>
+        <div className="gitHub">
+          <a href="https://github.com/settings/profile">
+          <PiGithubLogoFill />
+          </a>
+        </div>
+
+        <div className="facebook">
+          <a href="https://www.facebook.com/johnbertyabut2222">
+            <FaFacebookF />
+          </a>
+        </div>
+      </div>
+    </div>  
+      }
+       
       <ToastContainer />
     </div>
   );

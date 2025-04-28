@@ -1,31 +1,41 @@
 .Portfolio{
     padding-top: 5rem ;
-
+    height: 700px;
 }
 .project{
 display: flex;
 flex-direction: row;
-
 align-items: center;
 justify-content: space-between;
+flex-wrap: wrap;
+gap: 2rem;
+height: 90%;
+
+}
+.project .port-wrapper:hover{
+ margin-left: 2rem;
+    width: 50%;
+
 }
 .project .port-wrapper{
     background-color: #4768709c;
     padding: 2rem 5rem 2rem 0;
     height: 25rem;
-    width: 70%;
+    width: 60%;
+    transition: .3s ease-in-out;
 
 }
 
 .project .port-wrapper img{
 width: 100%;
 height: 100%;
+
 }
 .portfolio-title{
     text-align: center;
 }
 .portfolio-title p{
-    font-weight: var(--normal);
+    font-weight: var(--bold);
     font-size: 40px ;
     margin-bottom: 3rem;
     letter-spacing:.5rem;
@@ -33,7 +43,8 @@ height: 100%;
 }
 
 .port-info{
- width: 30%;
+ width: 35%;
+
 }
 .port-title{
     font-size: 32px;
@@ -43,4 +54,96 @@ height: 100%;
 .port-description{
     font-size: 17px;
     font-weight: var(--normal);
+}
+/* ============= RESPONSIVE ================ */
+@media screen and (max-width:1401px){
+  .port-info{
+   order: -1;
+  }
+  .Portfolio{
+
+    margin-bottom: 15rem;
+
+  }
+  .project{
+    padding: 0 2rem;
+
+  }
+    .project .port-wrapper{
+        width: 100%;
+        text-align:left;
+        height: 70%;
+    }
+    .port-info{
+        width: 100%;
+     padding: 20px 0px;
+      
+       }
+       .project .port-wrapper:hover{
+   margin-left: 2rem;
+        margin-bottom: 3rem;
+           width: 80%;
+
+       }
+}
+
+@media screen and (max-width:1000px){
+    .project .port-wrapper{
+        padding: 2rem 3rem 2rem 0;
+    height: 70%;
+    }
+  }
+@media screen and (max-width:800px){
+    .port-title{
+        font-size: 25px;
+    }
+    .portfolio-title p{
+      font-size: 35px ;
+    }
+  }
+  @media screen and (max-width:600px){
+    .project{
+    padding: 2rem;
+  }
+  .port-info{
+   padding: 0 2rem;
+   
+   }
+   .Portfolio{
+    padding-top: 5rem ;
+    height: 500px;
+}
+   .project .port-wrapper{
+    padding: 2rem 3rem 2rem 0;
+height: 100%;
+}
+.project .port-wrapper:hover{
+  
+         margin-bottom: 1rem;
+            width: 80%;
+      
+        }
+}
+@media screen and (max-width:500px){
+    .project{
+    padding: 0;
+  }
+  .port-info{
+   padding: 0 2rem;
+   
+   }
+   .Portfolio{
+    padding-top: 5rem ;
+    height: 500px;
+}
+   .project .port-wrapper{
+    padding: 2rem 3rem 2rem 0;
+height: 70%;
+}
+.project .port-wrapper:hover{
+  
+         margin-bottom: 1rem;
+            width: 80%;
+      
+        }
 }

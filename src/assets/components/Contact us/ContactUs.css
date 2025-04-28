@@ -7,6 +7,7 @@
 padding-top: 10rem;
 position: absolute;
 padding-bottom: 10rem;
+
 }
 .contact p{
     font-size: 24px;
@@ -14,12 +15,13 @@ padding-bottom: 10rem;
     margin-bottom: 2rem;
 }
 .contact form{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
    gap: 4rem;
+   /* background-color: #6E959E; */
 }
 .contact .row{
   width: 100%;
@@ -37,6 +39,9 @@ padding-bottom: 10rem;
     width: 50%;
     gap: 1rem;
 
+}
+.getTouch{
+    padding-bottom:4rem ;
 }
 .contact form .second-column{
     width: 50%;
@@ -73,9 +78,32 @@ padding-bottom: 10rem;
     color: #455B60;
     font-weight: var(--normal);
 }
-@media screen and (max-width:1000px){
+.submit:hover{
+    box-shadow: 1px 2px 18px 7px rgba(255,255,255,0.75);
+-webkit-box-shadow: 1px 2px 18px 7px rgba(255,255,255,0.75);
+-moz-box-shadow: 1px 2px 18px 7px rgba(255,255,255,0.75);
+
+}
+
+.submit:active{
+    background-color: transparent;
+    color: white;
+    border: 4px solid white;
+ 
+}
+
+@media screen and (max-width:1600px){
+    .contact form{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1200px){
     .row{
         flex-wrap: wrap;
+    }
+    .contact form{
+        width: 60%;
     }
 
     .contact form .second-column{
@@ -88,7 +116,6 @@ padding-bottom: 10rem;
     .message{
         width: 100%;
         resize: none;
-        background-color: #8E8E8E;
         height: 150px;
         padding: 1rem 1.5rem;
         border-radius: 10px;
@@ -104,5 +131,15 @@ padding-bottom: 10rem;
         align-items: center;
        gap: 4rem;
     }
-    
+}
+.logosTwo{
+    padding: 10px;
+    border-radius: 30px;
+    z-index: 9999;
+    margin-top: 1rem;
+}
+.logo-wrapperTwo{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }

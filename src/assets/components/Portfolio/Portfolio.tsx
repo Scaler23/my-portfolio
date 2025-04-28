@@ -9,23 +9,9 @@ const Portfolio = () => {
             <p>MY PORTFOLIO</p>
           </div>
           <div className="project">
-            <motion.div className="port-wrapper"
-            initial={{
-              width: "60%", 
-              height:"60%"
-            }}
-            whileHover={{
-             width: "50%",
-             height: "55%",
-             marginLeft: "4rem",
-            }}
-            exit={{
-    width: "70%", 
-              height:"70%"
-            }}
-      >
+            <div className="port-wrapper" >
             <img src={pc} alt=""/>
-            </motion.div>
+            </div>
            
          
           <div className="port-info">

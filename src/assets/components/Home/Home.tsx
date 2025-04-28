@@ -13,16 +13,16 @@ const Home = () => {
     
  
        
-          <motion.span className="font-light text-[64px]">Hello, I’m <span className="myName text-[#FFF600]">Johnbert.</span></motion.span> <br />
-          <div className="font-light text-[48px]">
+          <motion.span className="font-light text-[64px] hello">Hello, I’m <span className="myName">Johnbert.</span></motion.span> <br />
+          <div className="font-light text-[48px] typewrite">
           <Typewriter 
           text="I am a Jr. front-end web developer ."  /> <span className="type-line">|</span><br />
           </div>
-          <a href="#about"  className=" view-work-button ">
-            <button className="text-[25px] font-semibold border-[#609C90] border-3 bg-white text-[#455B60] 
-             " style={{
+          <a href="#about"  className=" view-work-button">
+            <button className="work text-[20px] font-semibold   bg-white text-[#455B60] 
+            " style={{
               marginTop: "2rem"
-             }}>View my work <IoIosArrowRoundDown className="inline-block " /></button>
+             }}>View my work <IoIosArrowRoundDown className="inline-block arrow " /></button>
           </a>
 
 

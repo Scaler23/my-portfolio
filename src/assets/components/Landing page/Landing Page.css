@@ -4,7 +4,6 @@ position: absolute;
    left: 50%;
    transform: translate(-50%);
    width: 71%;
-  
    margin-top: 12rem;
    box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
    -webkit-box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
@@ -15,25 +14,28 @@ position: absolute;
   border: 1px solid #d4d1d1;
   border-bottom: none;
   padding-bottom: 10rem;
+  position: relative;
   background-image: linear-gradient(to bottom, #a6a6a600, #595f62ab, #42454583, #2B2B2B);
 }
 .myPicture{
     position: absolute;
-    right: -150px;
-    width: 37rem;
-    top: 45px;
+    right: -170px;
+    width: 42rem;
+    top: 60px;
+    /* background-color: #193030; */
 
 }
 .myPicture img{
 width: 100%;
+height: 100%;
 }
 .circle-top {
-  position: absolute;
+position: absolute;
   width: 120px;
   height: 116px;
   border-radius: 50%;
   background-color: #B6B6B6;
-bottom: 52rem;
+  bottom: -50px;
   left: 50%;
   transform: translate(-50%);
   clip-path: inset(0 0 40% 0); /* Cuts the bottom half */
@@ -67,27 +69,19 @@ bottom: 52rem;
   transform: translate(-64%) skewX(-30deg);
 }
 
-/* =================== NAVIGATION CSS ===================*/
-/* .logo{
-    background-color: white;
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    border-radius: 50%;
-} */
-.logo {
-  height: 100px;
-  width: 100px;
-}
-
 /* ====================== SOCIAL MEDIA LOGOS =================== */
 .logos{
-  padding: 10px;
-  background-color: #193030;
   position: fixed;
-  left: 80px;
-  top: 350px;
-  border-radius: 30px;
+    display: block;
+    padding: 10px;
+    top: 320px;
+    left: 100px;
+    border-radius: 30px;
+    z-index: 9999;
+    background-color: #193030;
+    box-shadow: -5px 10px 10px -2px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: -5px 10px 10px -2px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: -5px 10px 10px -2px rgba(0,0,0,0.75) inset;
 
 }
 .linkin{
@@ -101,6 +95,11 @@ bottom: 52rem;
   justify-content: center;
   font-size: 24px;
 }
+.linkin:hover{
+  box-shadow: -1px 1px 18px 11px rgba(0,102,200,0.75);
+-webkit-box-shadow: -1px 1px 18px 11px rgba(0,102,200,0.75);
+-moz-box-shadow: -1px 1px 18px 11px rgba(0,102,200,0.75)
+}
 .facebook{
   border-radius: 50%;
   height: 39px;
@@ -111,6 +110,11 @@ bottom: 52rem;
   align-items: center;
   justify-content: center;
 
+}
+.facebook:hover{
+  box-shadow: -1px 1px 18px 11px rgba(8,124,234,0.75);
+-webkit-box-shadow: -1px 1px 18px 11px rgba(8,124,234,0.75);
+-moz-box-shadow: -1px 1px 18px 11px rgba(8,124,234,0.75);
 }
 .gitHub{
   border-radius: 50%;
@@ -126,12 +130,35 @@ bottom: 52rem;
   color: rgb(255, 255, 255);
 
 }
+.gitHub:hover{
+  box-shadow: -1px 1px 18px 11px rgba(255, 255, 255, 0.75);
+-webkit-box-shadow: -1px 1px 18px 11px rgba(255, 255, 255, 0.75);
+-moz-box-shadow: -1px 1px 18px 11px rgba(255, 255, 255, 0.75);
+}
+
+/* ====================== SOCIAL MEDIA LOGOS RESPONSIVE =================== */
+
+/* =================== NAVIGATION CSS ===================*/
+/* .logo{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 50%;
+} */
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
   padding:  0rem 1rem 0rem 2rem;
+  width: 100%;
 }
 .nav-list {
   display: none;
@@ -216,7 +243,14 @@ bottom: 52rem;
 
 /* ================= Nav Responsiveness =================== */
 
+/*  ============== My Picture Responsive ================= */
 
+@media screen and (max-width: 1500px) {
+  .myPicture{
+    width: 0;
+    height: 0;
+  }
+}
 
 @media screen and (max-width: 1400px) {
   .nav-list li a {
@@ -235,21 +269,6 @@ bottom: 52rem;
     gap: 2rem;
   }
 }
-
-@media screen and (max-width: 1000px) {
-  .content {
-    padding: 8rem 3rem;
-  }
-
-  main {
-    width: 100%;
-  }
-  .content {
-    border: none;
-  }
-
-}
-
 @media screen and (min-width: 900px) {
   .nav-list {
     visibility: visible;
@@ -259,13 +278,16 @@ bottom: 52rem;
     visibility: hidden;
   }
 }
-
-@media screen and (max-width: 700px) {
-  main {
+@media screen and (max-width: 800px) {
+  .main-container{
+    width: 100%;
     box-shadow: none;
   }
-
+  .hoabpo{
+    border: none;
+  }
 }
+
 
 
 .mouse-container {

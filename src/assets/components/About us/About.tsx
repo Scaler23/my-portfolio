@@ -24,6 +24,7 @@ const About = () => {
         <div className="aboutDescription">
           <div className="about-title">
             <motion.p
+              className="aboutText"
               viewport={{
                 amount: 0.5,
               }}
@@ -31,8 +32,9 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, y: -100 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
+            
             >
-              ABOUT ME
+              ABOUT
             </motion.p>
           </div>
           <div className="about-info">

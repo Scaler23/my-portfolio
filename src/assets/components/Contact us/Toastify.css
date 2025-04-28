@@ -2,7 +2,7 @@
     --toastify-color-light: #fff;
     --toastify-color-dark: #ffffff;
     --toastify-color-info: #3498db;
-    --toastify-color-success: #8E8E8E;  /* progress bar color */
+    --toastify-color-success:  #5AAD95;  /* progress bar color */
     --toastify-color-warning: #f1c40f;
     --toastify-color-error: hsl(6, 78%, 57%);
     --toastify-color-transparent: rgba(255, 255, 255, 0.7);
@@ -27,8 +27,8 @@
     --toastify-toast-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     --toastify-font-family: sans-serif;
     --toastify-z-index: 9999;
-    --toastify-text-color-light: #757575;
-    --toastify-text-color-dark: #8E8E8E;  /* color text */
+    --toastify-text-color-light: #000000;
+    --toastify-text-color-dark:  #455B60;  /* color text */
 
   
     /* Used only for colored theme */
