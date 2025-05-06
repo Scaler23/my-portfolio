@@ -187,6 +187,7 @@
     top: 5px;
 
 }
+
 .html-percent::after{
     content: "90%";
     position: absolute;
@@ -525,4 +526,9 @@
  .skill-bar .adobe{
     width: 140px;
  }
+}
+@media screen and (max-width:500px){
+   .about-skill-title p{
+      font-size: 30px;
+   }
 }

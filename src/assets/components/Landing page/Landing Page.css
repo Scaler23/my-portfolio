@@ -1,20 +1,34 @@
+.whole{
+  width: 100%;
+ background-color: #455C60;
+text-align: center;
 
-.main-container{
-position: absolute;
-   left: 50%;
-   transform: translate(-50%);
-   width: 71%;
-   margin-top: 12rem;
-   box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
-   -webkit-box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
-   -moz-box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
+
 }
+.half{
+  width: 100%;
+  margin-top: 12rem;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.main-container{
+ width: 71%;
+
+}
+.hoabpose{
+  box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
+  position: relative;
+}
 .hoabpo{
   border: 1px solid #d4d1d1;
   border-bottom: none;
   padding-bottom: 10rem;
-  position: relative;
+ position: relative;
   background-image: linear-gradient(to bottom, #a6a6a600, #595f62ab, #42454583, #2B2B2B);
 }
 .myPicture{
@@ -35,7 +49,7 @@ position: absolute;
   height: 116px;
   border-radius: 50%;
   background-color: #B6B6B6;
-  bottom: -50px;
+  bottom: -3.5rem;
   left: 50%;
   transform: translate(-50%);
   clip-path: inset(0 0 40% 0); /* Cuts the bottom half */
@@ -50,7 +64,7 @@ position: absolute;
   border-bottom-right-radius: none;
   border-bottom-left-radius: none;
   background-color: #455C60;
-  bottom: -58px;
+  bottom: -3.6rem;
   left: 50%;
   transform: translate(-50%);
   clip-path: inset(0 0 50% 0); /* Cuts the bottom half */
@@ -213,7 +227,7 @@ position: absolute;
   background-color: #d4d1d1;
 }
 .nav-list.show {
-  top: 130px;
+  top: 100px;
   display: block;
   left: 50%;
   transform: translate(-50%);

@@ -44,6 +44,8 @@ const LandingPage = () => {
   return (
     <>
       {/* ============= NAVIGATION ============ */}
+      <div className="whole">
+       
       <nav className="nav-container">
         <div className="logo">
           <a href="#home" className="Logo">
@@ -74,13 +76,14 @@ const LandingPage = () => {
           }}
         />
       </nav>
+      <div className="half">
       {/* ============= MOUSE================ */}
       <Mouse />
       {/* ====================== MEDIA LOGOS ================== */}
         {isShowSocialLogo && <SocialLogo />}
       {/* ============= MAIN CONTENT ====================== */}
       <div className="main-container">
-
+<div className="hoabpose">
         <div className="hoabpo">
    
           {/* =================== HOME ===================== */}
@@ -112,13 +115,13 @@ const LandingPage = () => {
           <div className="circle"></div>
           <div className="rectangle"></div>
         </div>
-
+        </div>
         <ContactUs />
  
         {/*========================== CONTACT ========================= */}
-   
+        </div>
       </div>
-     
+      </div>
     </>
   );
 };

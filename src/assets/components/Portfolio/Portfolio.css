@@ -13,7 +13,7 @@ height: 90%;
 
 }
 .project .port-wrapper:hover{
- margin-left: 2rem;
+ margin-left: 3rem;
     width: 50%;
 
 }
@@ -44,7 +44,7 @@ height: 100%;
 
 .port-info{
  width: 35%;
-
+text-align: left;
 }
 .port-title{
     font-size: 32px;
@@ -139,6 +139,11 @@ height: 100%;
    .project .port-wrapper{
     padding: 2rem 3rem 2rem 0;
 height: 70%;
+}
+.portfolio-title p{
+
+    font-size: 30px ;
+
 }
 .project .port-wrapper:hover{
   
