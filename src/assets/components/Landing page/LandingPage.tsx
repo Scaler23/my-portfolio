@@ -6,7 +6,7 @@ import Portfolio from "../Portfolio/Portfolio";
 import Services from "../Services/Services";
 import Person from "../../images/person.png";
 import Mouse from "./Mouse";
-import Logo from "../../images/LOGO.png";
+import Icon from "../../images/logo.png"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from "react";
 import SocialLogo from "./socialMediaLogo";
@@ -47,7 +47,7 @@ const LandingPage = () => {
       <nav className="nav-container">
         <div className="logo">
           <a href="#home" className="Logo">
-            <img src={Logo} alt="Scaler Logo" />
+            <img src={Icon} alt="Scaler Logo" />
           </a>
         </div>
         <ul className={`nav-list ${showNav ? "show" : "close"}`}>
