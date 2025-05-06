@@ -150,7 +150,7 @@ export const ContactUs: React.FC = () => {
     </div>  
       }
       <div className="copy">
-      &copy; Johnbert 2025.
+      Johnbert  &copy;2025
       </div>
         
       <ToastContainer

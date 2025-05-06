@@ -31,6 +31,24 @@ margin-bottom: 20rem;
      animation-timing-function: ease-in-out;
      
 }
+.read-more{
+    background-color: white;
+    color: #455B60;
+    padding: 5px 15px;
+    font-size: 20px;
+    margin-top: 2rem;
+    
+}
+.read-more:hover{
+    box-shadow: 1px 2px 18px 7px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 1px 2px 18px 7px rgba(255,255,255,0.75);
+    -moz-box-shadow: 1px 2px 18px 7px rgba(255,255,255,0.75);
+}
+.read-more:active{
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+}
 @keyframes arrowDown {
     0%{
         top: 0px;
@@ -87,5 +105,11 @@ margin-bottom: 20rem;
     }
     .arrow{
          font-size: 20px;
+    }
+    .read-more{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        
     }
 }

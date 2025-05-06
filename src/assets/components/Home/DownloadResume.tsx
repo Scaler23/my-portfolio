@@ -1,6 +1,6 @@
 
-import React from 'react'
 
+import "./Home.css"
 const DownloadResume = () => {
     const PDF_FILE_URL = "http://localhost:5173/Logo.png"
     const resume = (url:string) =>{
@@ -14,7 +14,7 @@ const DownloadResume = () => {
     }
   return (
     <div>
-      <button onClick={() => resume(PDF_FILE_URL)} className=" read-more border-[#DA324A] border-2 bg-none">
+      <button onClick={() => resume(PDF_FILE_URL)} className=" read-more">
         DOWNLOAD CV
       </button>
     </div>

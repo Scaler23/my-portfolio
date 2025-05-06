@@ -40,10 +40,16 @@
  justify-content: space-around;
 /* background-color: azure; */
 }
+.show-work img:hover{
+    box-shadow: -1px 0px 34px 8px rgba(69,91,96,0.75);
+    -webkit-box-shadow: -1px 0px 34px 8px rgba(69,91,96,0.75);
+    -moz-box-shadow: -1px 0px 34px 8px rgba(69,91,96,0.75);
+}
 .show-work img{
     width: 45%;
     height: 270px;
     border-radius: 10px;
+    transition: 0.3s ease-in-out;
 }
 @media screen and (max-width:1600px) {
     .show-work{
@@ -77,6 +83,9 @@
 @media screen and (max-width:452px) {
     .show-work img{
         width: 100%;
+    }
+    .show-work{
+        padding: 3rem 1rem;
     }
 
 }

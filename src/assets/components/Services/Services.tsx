@@ -2,14 +2,15 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import Gon from "../../images/image services/gon.webp";
 import pcSetup from "../../images/image services/pcsetup.jpg";
-import Laptop from "../../images/image services/laptop.jpg";
-import LaptopTwo from "../../images/image services/latop2.jpg";
+import WebDesign from "../../images/image services/webDesign.jpg"
+import UiUx from "../../images/image services/uiux.jpg"
+import LogoDesign from "../../images/image services/designlogo.jpg"
 import "./Services.css";
 const tabs = [
   { id: "all", label: "All" },
   { id: "web", label: "Web Design" },
   { id: "logo", label: "Logo Design" },
-  { id: "brand", label: "Branding" },
+  { id: "ui/ux", label: "UI/UX Design" },
 ];
 
 const Services = () => {
@@ -18,13 +19,13 @@ const Services = () => {
   const getImages = () => {
     switch (selectedTab.id) {
       case "web":
-        return [Gon, pcSetup];
+        return [Gon, WebDesign];
       case "logo":
-        return [pcSetup];
-      case "brand":
-        return [Laptop]; // Add branding images if any
+        return [LogoDesign];
+      case "ui/ux":
+        return [UiUx]; 
       default:
-        return [pcSetup, Laptop, LaptopTwo, Gon];
+        return [  Gon, WebDesign, UiUx,LogoDesign];
     }
   };
 

@@ -3,6 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import MySkills from "./mySkill";
 import { motion } from "motion/react";
 import Person from "../../images/person.png";
+import DownloadResume from "../Home/DownloadResume";
 const About = () => {
   return (
     <div className="about" id="about">
@@ -47,24 +48,14 @@ const About = () => {
               exit={{ opacity: 0, y: -100 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
-              beatae provident, explicabo perferendis debitis est quas quaerat
-              consectetur delectus fuga libero qui fugit nesciunt harum placeat
-              dolorum amet quidem ullam impedit esse deleniti quia rerum?
-              Praesentium inventore quo perferendis iure officiis nam! Corrupti
-              ducimus perferendis dolores hic, adipisci unde aperiam asperiores
-              reiciendis nulla quae inventore aspernatur? Dolorem ab ipsa
-              excepturi! Lorem ipsum dolor sit, amet consectetur adipisicing
-              elit. Veniam harum voluptatem, consequatur quibusdam voluptatum
-              aliquam nobis laborum unde, ipsam illum aspernatur labore eligendi
-              adipisci perferendis veritatis. Voluptatibus iste temporibus
-              blanditiis cum accusamus molestias magnam maxime dignissimos ut?
-              Nisi, doloremque eligendi.
+              A determined programmer who is always seeking knowledge,
+              I believe that you will find knowledge when you seek it.
+              and I found ReactJS for the frontend. I enjoy using it to create websites that are responsive, scalable, and user-friendly. Aside from coding, I also enjoy designing and creating website prototypes using these tools, Figma, Canva, and Adobe.
+              It's enjoyable to design websites, especially since I can build them through coding.
+              Right now, I am looking for a company that will accept and help me improve and expand my knowledge in this field. In addition to web development, my tools in creating web applications are ReactJS, TypeScript, HTML, and CSS. I am always eager to take on new challenges and keep learning as I grow in this field.
             </motion.p>
           </div>
-          <button className=" read-more">
-            <Link to="/creative-professional">READ MORE</Link>
-          </button>
+          <DownloadResume/>
         </div>
       </div>
 
