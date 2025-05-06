@@ -8,11 +8,9 @@ text-align: center;
 .half{
   width: 100%;
   margin-top: 12rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .main-container{
  width: 71%;
@@ -297,10 +295,17 @@ position: absolute;
   .main-container{
     width:100%;
 
-    box-shadow: none;
   }
   .hoabpo{
     border: none;
+  }
+  .hoabpose{
+    box-shadow: none;
+  }
+}
+@media screen and (max-width:370px){
+  .half{
+    margin-top: 6rem;
   }
 }
 

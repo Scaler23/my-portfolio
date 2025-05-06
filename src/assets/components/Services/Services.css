@@ -89,6 +89,13 @@
     }
 
 }
+@media screen and (max-width:400px) {
+    .show-work img{
+       height: 200px ;
+    }
+ 
+
+}
 /*@media screen and (max-width:1050px) {
     .show-work{
         padding: 3rem 2rem;
