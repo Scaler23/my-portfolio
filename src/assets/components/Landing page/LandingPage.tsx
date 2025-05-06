@@ -6,7 +6,7 @@ import Portfolio from "../Portfolio/Portfolio";
 import Services from "../Services/Services";
 import Person from "../../images/person.png";
 import Mouse from "./Mouse";
-import Icon from "../../images/logo.png"
+import Icon from "../../images/icon.png"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from "react";
 import SocialLogo from "./socialMediaLogo";
