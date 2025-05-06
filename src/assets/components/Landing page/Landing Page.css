@@ -82,71 +82,7 @@ position: absolute;
 }
 
 /* ====================== SOCIAL MEDIA LOGOS =================== */
-.logos{
-  position: fixed;
-    display: block;
-    padding: 10px;
-    top: 320px;
-    left: 100px;
-    border-radius: 30px;
-    z-index: 9999;
-    background-color: #193030;
-    box-shadow: -5px 10px 10px -2px rgba(0,0,0,0.75) inset;
-    -webkit-box-shadow: -5px 10px 10px -2px rgba(0,0,0,0.75) inset;
-    -moz-box-shadow: -5px 10px 10px -2px rgba(0,0,0,0.75) inset;
 
-}
-.linkin{
-  border-radius: 50%;
-  height: 39px;
-    width: 39px;
-  background-color: #0066C8;
-  margin-bottom: .5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-}
-.linkin:hover{
-  box-shadow: -1px 1px 18px 11px rgba(0,102,200,0.75);
--webkit-box-shadow: -1px 1px 18px 11px rgba(0,102,200,0.75);
--moz-box-shadow: -1px 1px 18px 11px rgba(0,102,200,0.75)
-}
-.facebook{
-  border-radius: 50%;
-  height: 39px;
-    width: 39px;
-  background-color: #0D8BF1;
- font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-.facebook:hover{
-  box-shadow: -1px 1px 18px 11px rgba(8,124,234,0.75);
--webkit-box-shadow: -1px 1px 18px 11px rgba(8,124,234,0.75);
--moz-box-shadow: -1px 1px 18px 11px rgba(8,124,234,0.75);
-}
-.gitHub{
-  border-radius: 50%;
-  height: 39px;
-    width: 39px;
-  background-color: rgb(0, 0, 0);
-  margin-bottom: .5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 35px;
-  padding-top: 8px;
-  color: rgb(255, 255, 255);
-
-}
-.gitHub:hover{
-  box-shadow: -1px 1px 18px 11px rgba(255, 255, 255, 0.75);
--webkit-box-shadow: -1px 1px 18px 11px rgba(255, 255, 255, 0.75);
--moz-box-shadow: -1px 1px 18px 11px rgba(255, 255, 255, 0.75);
-}
 
 /* ====================== SOCIAL MEDIA LOGOS RESPONSIVE =================== */
 
@@ -309,8 +245,6 @@ position: absolute;
   }
 }
 
-
-
 .mouse-container {
   position: fixed;
   bottom: 2rem;
@@ -325,7 +259,6 @@ position: absolute;
   justify-content: center;
   align-items: center;
   border: #ffffffb9 1px solid;
-
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 .mouse-container .mouse-scroll {

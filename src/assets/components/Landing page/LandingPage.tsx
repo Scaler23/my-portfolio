@@ -12,23 +12,6 @@ import { useState, useEffect } from "react";
 import SocialLogo from "./socialMediaLogo";
 const LandingPage = () => {
   const [showNav, setShowNav] = useState<boolean>(false);
-  const [isShowSocialLogo, setShowSocialLogo] = useState<boolean>(false)
-  useEffect(() => {
-    const handleWidth = () => {
-      if (window.innerWidth < 1300) {
-        setShowSocialLogo(false);
-      } else {
-        setShowSocialLogo(true);
-      }
-    };
-
-    // Call once on mount
-    handleWidth();
-
-    window.addEventListener("resize", handleWidth);
-    return () => window.removeEventListener("resize", handleWidth);
-  }, []);
-
 
   useEffect(() => {
     const handleResize = () => {
@@ -79,8 +62,6 @@ const LandingPage = () => {
       <div className="half">
       {/* ============= MOUSE================ */}
       <Mouse />
-      {/* ====================== MEDIA LOGOS ================== */}
-        {isShowSocialLogo && <SocialLogo />}
       {/* ============= MAIN CONTENT ====================== */}
       <div className="main-container">
 <div className="hoabpose">

@@ -10,20 +10,19 @@ import { PiGithubLogoFill } from "react-icons/pi";
 
 
 export const ContactUs: React.FC = () => {
-  const [isWidth, setWidth] = useState<boolean>(false);
-
-  useEffect(()=>{
-        const HandWidth = () =>{
-            if(window.innerWidth < 1300){
-              setWidth(true)
-            }else{
-              setWidth(false)
-            }
-        }
-        HandWidth();
-        window.addEventListener("resize", HandWidth);
-        return () => window.removeEventListener("resize", HandWidth);
-  },[])
+  // const [isWidth, setWidth] = useState<boolean>(false);
+  // useEffect(()=>{
+  //       const HandWidth = () =>{
+  //           if(window.innerWidth < 1300){
+  //             setWidth(true)
+  //           }else{
+  //             setWidth(false)
+  //           }
+  //       }
+  //       HandWidth();
+  //       window.addEventListener("resize", HandWidth);
+  //       return () => window.removeEventListener("resize", HandWidth);
+  // },[])
   const form = useRef<HTMLFormElement>(null);
   const [isSending, setIsSending] = useState<boolean>(false);
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -127,7 +126,7 @@ export const ContactUs: React.FC = () => {
           transition={{ duration: 0.5 }}
         />
       </form>
-      {isWidth &&
+    
       <div className="logosTwo">
       <div className="logo-wrapperTwo">
         <div className="linkin">
@@ -148,7 +147,6 @@ export const ContactUs: React.FC = () => {
         </div>
       </div>
     </div>  
-      }
       <div className="copy">
       Johnbert  &copy;2025
       </div>

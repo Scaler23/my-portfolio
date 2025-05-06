@@ -16,7 +16,6 @@
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-
 }
 .work-button button{
     width: 130px;
@@ -89,9 +88,9 @@
     }
 
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:430px) {
     .show-work img{
-       height: 200px ;
+       height: 190px ;
     }
  
 
