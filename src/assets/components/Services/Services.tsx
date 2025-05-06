@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import Gon from "../../images/image services/gon.webp";
-import pcSetup from "../../images/image services/pcsetup.jpg";
 import WebDesign from "../../images/image services/webDesign.jpg"
 import UiUx from "../../images/image services/uiux.jpg"
 import LogoDesign from "../../images/image services/designlogo.jpg"

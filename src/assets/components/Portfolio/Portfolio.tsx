@@ -1,7 +1,5 @@
 import "./Portfolio.css"
 import pc from "../../images/image services/pcsetup.jpg"
-import laptop from "../../images/image services/latop2.jpg"
-import {motion} from "motion/react"
 const Portfolio = () => {
   return (
     <div className="Portfolio" id="portfolio">

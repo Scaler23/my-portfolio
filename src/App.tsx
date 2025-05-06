@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import LandingPage from "./assets/components/Landing page/LandingPage"
 import "./index.css"
-import { useState, useEffect } from "react"
+
 // import Loader from "./loader"
 
 function App() {

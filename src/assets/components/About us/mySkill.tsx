@@ -1,5 +1,4 @@
 import "./mySkill.css";
-import { useEffect } from "react";
 import { motion } from "motion/react";
 const MySkills = () => {
   return (

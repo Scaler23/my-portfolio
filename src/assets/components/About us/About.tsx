@@ -1,5 +1,4 @@
 import "./About.css";
-import { Link, Outlet } from "react-router-dom";
 import MySkills from "./mySkill";
 import { motion } from "motion/react";
 import Person from "../../images/person.png";
@@ -52,7 +51,7 @@ const About = () => {
               I believe that you will find knowledge when you seek it.
               and I found ReactJS for the frontend. I enjoy using it to create websites that are responsive, scalable, and user-friendly. Aside from coding, I also enjoy designing and creating website prototypes using these tools, Figma, Canva, and Adobe.
               It's enjoyable to design websites, especially since I can build them through coding.
-              Right now, I am looking for a company that will accept and help me improve and expand my knowledge in this field. In addition to web development, my tools in creating web applications are ReactJS, TypeScript, HTML, and CSS. I am always eager to take on new challenges and keep learning as I grow in this field.
+              Right now, I am looking for a company that will accept and help me improve and expand my knowledge in this field. In addition to web development, my tools in creating web applications are JavaScript, ReactJS, TypeScript, HTML, and CSS. I am always eager to take on new challenges and keep learning as I grow in this field.
             </motion.p>
           </div>
           <DownloadResume/>
