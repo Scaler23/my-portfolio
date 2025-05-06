@@ -2,7 +2,7 @@
 
 import "./Home.css"
 const DownloadResume = () => {
-    const PDF_FILE_URL = "http://localhost:5173/Logo.png"
+    const PDF_FILE_URL = "./resume.pdf"
     const resume = (url:string) =>{
                 const filename = url.split("/").pop(); 
                 const link = document.createElement("a");

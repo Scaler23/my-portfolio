@@ -159,6 +159,7 @@ position: absolute;
   background-color: white;
   padding:  0rem 1rem 0rem 2rem;
   width: 100%;
+  overflow: hidden;
 }
 .nav-list {
   display: none;
@@ -280,7 +281,8 @@ position: absolute;
 }
 @media screen and (max-width: 800px) {
   .main-container{
-    width: 100%;
+    width:100%;
+
     box-shadow: none;
   }
   .hoabpo{
