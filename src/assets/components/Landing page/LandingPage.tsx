@@ -9,7 +9,6 @@ import Mouse from "./Mouse";
 import Icon from "../../images/icon.png"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from "react";
-import SocialLogo from "./socialMediaLogo";
 const LandingPage = () => {
   const [showNav, setShowNav] = useState<boolean>(false);
 

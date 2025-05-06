@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
 import { notifyAlert, notifyErr, notifySuccess } from "./ToastifyNotification";
 import { motion } from "motion/react";
@@ -10,19 +10,7 @@ import { PiGithubLogoFill } from "react-icons/pi";
 
 
 export const ContactUs: React.FC = () => {
-  // const [isWidth, setWidth] = useState<boolean>(false);
-  // useEffect(()=>{
-  //       const HandWidth = () =>{
-  //           if(window.innerWidth < 1300){
-  //             setWidth(true)
-  //           }else{
-  //             setWidth(false)
-  //           }
-  //       }
-  //       HandWidth();
-  //       window.addEventListener("resize", HandWidth);
-  //       return () => window.removeEventListener("resize", HandWidth);
-  // },[])
+
   const form = useRef<HTMLFormElement>(null);
   const [isSending, setIsSending] = useState<boolean>(false);
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {

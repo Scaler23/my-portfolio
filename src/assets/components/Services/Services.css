@@ -85,10 +85,22 @@
     }
     .show-work{
         padding: 3rem 1rem;
+        gap: 3rem;
     }
 
 }
 @media screen and (max-width:430px) {
+    .show-work{
+        gap: 2rem;
+    }
+    .show-work img{
+       height: 200px ;
+    }
+ 
+
+}
+@media screen and (max-width:390px) {
+
     .show-work img{
        height: 190px ;
     }
