@@ -1,5 +1,5 @@
 import "./Portfolio.css"
-import pc from "../../images/image services/pcsetup.jpg"
+import Project from "../../images/websiteImg.png"
 const Portfolio = () => {
   return (
     <div className="Portfolio" id="portfolio">
@@ -8,7 +8,7 @@ const Portfolio = () => {
           </div>
           <div className="project">
             <div className="port-wrapper" >
-            <img src={pc} alt=""/>
+            <img src={Project} alt=""/>
             </div>
            
          

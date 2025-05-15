@@ -1,110 +1,189 @@
-.about{
-    display: flex;
-    flex-direction: column;
-   padding: 10rem 5rem 0 5rem;
-   justify-content: space-between;
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 5rem 0 5rem;
+  justify-content: space-between;
   margin-bottom: 5rem;
 }
+.about .about-container {
+  position: relative;
+}
 /* ===================Creative Professional */
-  .about-title p{
-    font-weight: var(--normal);
-    font-size: 40px ;
-    margin-bottom: 2rem;
-    letter-spacing:.5rem;
-    font-weight: var(--bold);
-    margin-bottom: 2rem;
-  }
-  .about-skill-title p{
-   font-weight: var(--normal);
-   font-size: 40px ;
-   margin-bottom: 2rem;
-   letter-spacing:.5rem;
-   margin-bottom: 4rem;
-   text-align: center;
-   font-weight: var(--bold);
-  }
-  /* ============About Me ===================== */
-  .creative-professional{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10rem;
-   justify-content: space-around;
-  }
-  .about-info p{
-    line-height: 30px;
-  
-  }
-  .myImage{
-   width: 50%;
-  }
-  .myImage img{
-   width: 100%;
-  }
-  .aboutDescription{
-   width: 50%;
-   text-align: left;
-  }
+.about-title p {
+  font-weight: var(--normal);
+  font-size: 40px;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5rem;
+  font-weight: var(--bold);
+  margin-bottom: 2rem;
+}
+.about-skill-title p {
+  font-weight: var(--normal);
+  font-size: 40px;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-weight: var(--bold);
+}
+/* ============About Me ===================== */
+.creative-professional {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
- @media screen and (max-width: 1300px) {
-   .myImage{
-      width: 80%;
-      margin-bottom: 5rem;
-     }
-     .creative-professional{
-      flex-wrap: wrap;
-    }
-    .aboutDescription{
-      width: 90%;
-     }
- 
-     .about-title p{
-      font-size: 48px ;
-      margin-bottom: 1.5rem;
-      text-align: center;
-     
-    }
+.about-info p {
+  line-height: 30px;
+}
 
- }
- @media screen and (max-width: 1200px) {
-   .about{
+.myImage {
+  width: 50%;
+}
+.image-part {
+  position: relative;
+  width: 500px;
+}
+.second-picture {
+  position: absolute;
+  top: -4rem;
+  left: 50px;
+  z-index: 100;
+}
+.second-picture img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.circle-one {
+  width: 80%;
+  height: 60%;
+  top: 10rem;
+  left: 3rem;
+  background-color: #7fffd4;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -10;
+  box-shadow: -1px 1px 21px 19px rgba(0, 255, 170, 0.75);
+  -webkit-box-shadow: -1px 1px 21px 19px rgba(0, 255, 170, 0.75);
+  -moz-box-shadow: -1px 1px 21px 19px rgba(0, 255, 170, 0.75);
+}
+.circle-two {
+  height: 130px;
+  position: absolute;
+  top: 8rem;
+  left: 4rem;
+  background-color: aquamarine;
+  width: 130px;
+  border-radius: 50%;
+  z-index: -10;
+}
+.circle-three {
+  height: 40px;
+  position: absolute;
+  top: 6rem;
+  left: 3rem;
+  background-color: aquamarine;
+  width: 40px;
+  border-radius: 50%;
+  z-index: -10;
+}
+.circle-four {
+  height: 20px;
+  position: absolute;
+  top: 4.5rem;
+  left: 5rem;
+  background-color: aquamarine;
+  width: 20px;
+  border-radius: 50%;
+  z-index: -10;
+}
+
+.aboutDescription {
+  width: 50%;
+  text-align: left;
+}
+@media screen and (max-width: 1600px) {
+  .image-part {
+    left: 43%;
+    transform: translate(-50%);
+    width: 450px;
+  }
+  .creative-professional {
+    flex-wrap: wrap;
+    margin-top: 35rem;
+  }
+  .circle-one {
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .aboutDescription {
+    width: 90%;
+  }
+  .about-title p {
+    font-size: 48px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about {
     padding: 10rem 2rem 0 2rem;
-   }
-
+  }
 }
 @media screen and (max-width: 800px) {
-  .about-title p{
- 
-    font-size: 35px ;
+  .about-title p {
+    font-size: 35px;
   }
-  .about-skill-title p{
-    font-size: 35px ;
-   }
-}
-
-
- @media screen and (max-width: 700px) {
-     .aboutDescription{
-      width: 100%;
-     }
-     .myImage{
-      border: 1px solid white;
-      border-radius: 10px;
-      width: 100%;
-      padding: 0;
-  
-      background-color: #2B887D;
-     }
- }
- @media screen and (max-width: 500px) {
-  .about-title p{
-
-    font-size: 30px ;
-
+  .about-skill-title p {
+    font-size: 35px;
   }
 }
-
-
-
-
-
-
+@media screen and (max-width: 700px) {
+  .aboutDescription {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about-title p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .image-part {
+    left: 43%;
+    transform: translate(-50%);
+    width: 350px;
+  }
+  .creative-professional {
+    flex-wrap: wrap;
+    margin-top: 30rem;
+  }
+  .circle-one {
+    border-radius: 50%;
+    left: 50%;
+    top: 7rem;
+    transform: translate(-50%);
+  }
+  .circle-two {
+    height: 100px;
+    top: 5.5rem;
+    left: 3rem;
+    width: 100px;
+  }
+  .circle-three {
+    height: 25px;
+    top: 4rem;
+    left: 3rem;
+    width: 25px;
+  }
+  .circle-four {
+    height: 12px;
+    top: 3rem;
+    left: 4.5rem;
+    width: 12px;
+  }
+}

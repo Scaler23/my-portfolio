@@ -1,24 +1,39 @@
 import "./About.css";
 import MySkills from "./mySkill";
 import { motion } from "motion/react";
-import Person from "../../images/person.png";
+import Person from "../../images/me.png";
 import DownloadResume from "../Home/DownloadResume";
 const About = () => {
   return (
     <div className="about" id="about">
-      <div className="creative-professional">
-        <div className="myImage">
-          <motion.img
-            src={Person}
-            alt=""
-            viewport={{
+      <div className="about-container">
+       <div className="image-part">
+                 <div className="second-picture">
+                    <div className="circle-one">
+            </div>
+                    <div className="circle-two">
+            </div>
+                    <div className="circle-three">
+            </div>
+                    <div className="circle-four">
+            </div>
+                       <motion.img src={Person} alt="" 
+                         viewport={{
               amount: 0.5,
             }}
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, y: -100 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-          />
+                       />
+                  </div>
+          
+              
+          </div>
+      
+      <div className="creative-professional">
+        <div className="myImage">
+         
         </div>
 
         <div className="aboutDescription">
@@ -57,7 +72,7 @@ const About = () => {
           <DownloadResume/>
         </div>
       </div>
-
+</div>
       <MySkills />
   
     </div>

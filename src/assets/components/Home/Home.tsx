@@ -13,8 +13,8 @@ const Home = () => {
     
  
        
-          <motion.span className="font-light text-[64px] hello">Hello, I’m <span className="myName">Johnbert.</span></motion.span> <br />
-          <div className="font-light text-[48px] typewrite">
+          <motion.span className="font-light text-[48px] hello">Hello, I’m <span className="myName">Johnbert.</span></motion.span> <br />
+          <div className="font-light text-[32px] typewrite">
           <Typewriter 
           text="I am a Jr. front-end web developer ."  /> <span className="type-line">|</span><br />
           </div>

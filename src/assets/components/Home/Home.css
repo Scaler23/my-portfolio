@@ -1,7 +1,6 @@
 .home{
-
  text-align: center;
-padding-right: 20rem;
+padding-right: 35rem;
 padding-top: 10rem;
 margin-bottom: 20rem;
 
@@ -119,9 +118,7 @@ margin-bottom: 20rem;
       .hello{
           font-size: 35px;
       }
-}
-@media screen and (max-width:370px){
-    .read-more{
-     width: 60%;
+       .read-more{
+     width: 90%;
     }
 }

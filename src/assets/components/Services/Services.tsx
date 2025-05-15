@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import Gon from "../../images/image services/gon.webp";
+import myWeb from "../../images/image services/myWeb.jpg"
 import WebDesign from "../../images/image services/webDesign.jpg"
-import UiUx from "../../images/image services/uiux.jpg"
-import LogoDesign from "../../images/image services/designlogo.jpg"
+import Branding from "../../images/image services/branding.jpg"
+import LogoDesign from "../../images/image services/combinelogo.jpg"
 import "./Services.css";
 const tabs = [
   { id: "all", label: "All" },
   { id: "web", label: "Web Design" },
   { id: "logo", label: "Logo Design" },
-  { id: "ui/ux", label: "UI/UX Design" },
+  { id: "branding", label: "Branding" },
 ];
 
 const Services = () => {
@@ -18,13 +18,13 @@ const Services = () => {
   const getImages = () => {
     switch (selectedTab.id) {
       case "web":
-        return [Gon, WebDesign];
+        return [myWeb, WebDesign];
       case "logo":
         return [LogoDesign];
-      case "ui/ux":
-        return [UiUx]; 
+      case "branding":
+        return [Branding]; 
       default:
-        return [  Gon, WebDesign, UiUx,LogoDesign];
+        return [  myWeb, WebDesign, Branding,LogoDesign];
     }
   };
 

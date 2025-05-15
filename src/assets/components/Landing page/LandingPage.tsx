@@ -4,9 +4,10 @@ import About from "../About us/About";
 import { ContactUs } from "../Contact us/ContactUs";
 import Portfolio from "../Portfolio/Portfolio";
 import Services from "../Services/Services";
-import Person from "../../images/person.png";
+import {motion} from "motion/react"
+import Mypicture from "../../images/thirdpicture.png"
 import Mouse from "./Mouse";
-import Icon from "../../images/icon.png"
+import Icon from "../../images/Icon.png"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from "react";
 const LandingPage = () => {
@@ -30,9 +31,12 @@ const LandingPage = () => {
        
       <nav className="nav-container">
         <div className="logo">
+          <div className="icon">
           <a href="#home" className="Logo">
             <img src={Icon} alt="Scaler Logo" />
           </a>
+          </div>
+       <span>SCALER | <span className="code">CODE</span></span>
         </div>
         <ul className={`nav-list ${showNav ? "show" : "close"}`}>
           <li>
@@ -70,7 +74,20 @@ const LandingPage = () => {
 
           {/* MY PICTURE */}
           <div className="myPicture">
-            <img src={Person} alt="" />
+                 <div className="img-container">
+                       <motion.img src={Mypicture} alt="" 
+                         viewport={{
+              amount: 0.5,
+            }}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, y: -100 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+                       />
+                  </div>
+            <div className="img-wrapper">
+            </div>
+              
           </div>
 
           <div className="first-background" id="home">

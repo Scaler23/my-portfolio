@@ -173,7 +173,7 @@
     padding-top: 2rem;
  }
 .javascript-percent::after{
-    content: "80%";
+    content: "70%";
     position: absolute;
    color: rgb(255, 255, 255);
     right: 0;
@@ -189,7 +189,7 @@
 }
 
 .html-percent::after{
-    content: "90%";
+    content: "80%";
     position: absolute;
    color: rgb(255, 255, 255);
     right: 0;
@@ -197,7 +197,7 @@
 
 }
 .css-percent::after{
-    content: "90%";
+    content: "80%";
     position: absolute;
    color: rgb(255, 255, 255);
     right: 0;
