@@ -7,7 +7,7 @@ import Services from "../Services/Services";
 import {motion} from "motion/react"
 import Mypicture from "../../images/thirdpicture.png"
 import Mouse from "./Mouse";
-import Icon from "../../images/Icon.png"
+import Scaler from "../../images/scalerLogo.png"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from "react";
 const LandingPage = () => {
@@ -33,7 +33,7 @@ const LandingPage = () => {
         <div className="logo">
           <div className="icon">
           <a href="#home" className="Logo">
-            <img src={Icon} alt="Scaler Logo" />
+            <img src={Scaler} alt="Scaler Logo" />
           </a>
           </div>
        <span>SCALER | <span className="code">CODE</span></span>
