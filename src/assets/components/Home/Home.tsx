@@ -14,9 +14,9 @@ const Home = () => {
  
        
           <motion.span className="font-light text-[48px] hello">Hello, I’m <span className="myName">Johnbert.</span></motion.span> <br />
-          <div className="font-light text-[32px] typewrite">
+          <div className="font-light text-[30px] typewrite">
           <Typewriter 
-          text="I am a Jr. front-end web developer ."  /> <span className="type-line">|</span><br />
+          text="I am a Junior Front-End Web Developer."  /> <span className="type-line">|</span><br />
           </div>
           <a href="#about"  className=" view-work-button">
             <button className="work text-[20px] font-semibold   bg-white text-[#455B60] 
