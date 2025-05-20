@@ -2,7 +2,7 @@ import "./mySkill.css";
 import { motion } from "motion/react";
 const MySkills = () => {
   return (
-    <div className="mySkills">
+    <div id="mySkills">
       <div className="about-skill-title">
         <p>MY SKILLS</p>
       </div>

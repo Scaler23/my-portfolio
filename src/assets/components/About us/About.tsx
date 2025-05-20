@@ -17,6 +17,7 @@ const About = () => {
             </div>
                     <div className="circle-four">
             </div>
+            <div className="image-me">
                        <motion.img src={Person} alt="" 
                          viewport={{
               amount: 0.5,
@@ -26,7 +27,9 @@ const About = () => {
             exit={{ opacity: 0, y: -100 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
                        />
-                  </div>
+
+            </div>
+          </div>
           
               
           </div>
@@ -39,7 +42,7 @@ const About = () => {
         <div className="aboutDescription">
           <div className="about-title">
             <motion.p
-              className="aboutText"
+              className="aboutText "
               viewport={{
                 amount: 0.5,
               }}
@@ -53,7 +56,7 @@ const About = () => {
             </motion.p>
           </div>
           <div className="about-info">
-            <motion.p
+            <motion.div
               viewport={{
                 amount: 0.5,
               }}
@@ -62,12 +65,14 @@ const About = () => {
               exit={{ opacity: 0, y: -100 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             >
-              A determined programmer who is always seeking knowledge,
-              I believe that you will find knowledge when you seek it.
-              I found ReactJS for the front-end and I enjoyed using it to create websites that are responsive, scalable, and user-friendly. Aside from coding, I also enjoy designing and creating website prototypes using these tools, Figma, Canva, and Adobe.
-              It's enjoyable to design websites, especially since I can build them through coding.
-              Right now, I am looking for a company that will accept and help me improve and expand my knowledge in this field. In addition to web development, my tools in creating web applications are JavaScript, ReactJS, TypeScript, HTML, and CSS. I am always eager to take on new challenges and keep learning as I grow in this field.
-            </motion.p>
+                 <p className="indent-8 text-justify">A determined programmer who is always seeking knowledge, I believe that you will find knowledge when you seek it.  I found ReactJS for the front-end and I enjoyed using it to create websites that are responsive, scalable, and 
+                  user-friendly. Aside from coding, I also enjoy designing and creating website prototypes using these tools, Figma, Canva, and Adobe.
+                  </p>
+                <br />
+                <p className="indent-8 text-justify"> It's enjoyable to design websites, especially since I can build them through coding. Right now, I am looking for a company that will accept and help me improve and expand my knowledge in this field. </p>
+                <br />
+                <p className="indent-8 text-justify">  In addition to web development, my tools in creating web applications are JavaScript, ReactJS, TypeScript, HTML, and CSS. I am always eager to take on new challenges and keep learning as I grow in this field.</p>
+            </motion.div>
           </div>
           <DownloadResume/>
         </div>

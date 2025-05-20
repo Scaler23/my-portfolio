@@ -1,111 +1,203 @@
-.services{
+.services {
   text-align: center;
-    padding: 3rem 0rem;
-   
+  padding: 3rem 0rem;
+  background-color: #246e64;
 }
-.services p{
-    font-weight: var(--normal);
-    font-size: 24px;
-    color: black;
-    margin-bottom: 1rem;
+.services p {
+  font-weight: var(--normal);
+  font-size: 36px;
+  color: white;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
-.work-button{
-    display: flex;
-    justify-content: center;
+.work-button {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+.work-button button {
+  width: 130px;
+  height: 33px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: var(--font-weight-semibold);
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: "pointer";
+  position: "relative";
+}
+
+.show-work {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 3rem 10rem;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+
+  /* background-color: azure; */
+}
+.selectectedWork {
+  width: 37%;
+  height: 210px;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  
+}
+
+.selectectedWork img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.selectectedWork .hoverText {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+}
+.selectectedWork .hoverText-wrapper {
+align-items: center;
+}
+
+.selectectedWork .hoverText .image-logo{
+margin-top: 1rem;
+margin-bottom: .3rem;
+width: 100%;
+height: 30%;
+position: relative;
+
+display: flex;
+justify-content: center;
+
+}
+.selectectedWork .hoverText .image-logo .image-box{
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hoverText-wrapper .content{
+  display: flex;
+  flex-direction: column;
+}
+.selectectedWork .hoverText .logo-container{
+border-radius: 50%;
+height: 70%;
+width: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+left: 50%;
+transform: translate(-50%);
+transition: 0.4s;
+
+}
+.selectectedWork .hoverText .image-icon {
+  color: #246e64;
+  font-size: 40px;
+  transition: ease-in-out 0.3s;
+
+}
+.selectectedWork .hoverText .image-box:hover .image-icon{
+  color: white;
+  font-size: 30px;
+}
+.selectectedWork .hoverText .image-box:hover .logo-container {
+ animation: Done 2s ease-in-out;
+ background-color: #246e64;
+
+}
+
+@keyframes  Done{
+   0% {
+    left:42.5%;
+    transform: rotate(0deg) ;
+  }
+  50% {
+
+    left: 60%; /* Use left consistently */
+    transform: rotate(360deg) ;
+  }
+   75% {
+
+    left: 25%; /* Use left consistently */
+    transform: rotate(-360deg) ;
+  }
+  100% {
+    left: 42.5%;
+    transform:  rotate(0deg);
+  }
+}
+.hoverText .workTitle {
+  color: #246e64;
+  padding: 0 2rem;
+  font-size: 24px;
+  font-weight: var(--bold);
+}
+.hoverText .workDescription {
+  color: #246e64;
+  font-size: 15px;
+  font-weight: var(--semibold);
+  text-align: justify;
+}
+
+@media screen and (max-width: 1600px) {
+  .show-work {
+    padding: 3rem 5rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .show-work {
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .show-work img {
+    width: 70%;
+  }
+  .work-button button {
+    width: 35%;
+  }
+  .work-button {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .show-work img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 452px) {
+  .show-work img {
+    width: 100%;
+  }
+  .show-work {
+    padding: 3rem 1rem;
     gap: 3rem;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
+  }
 }
-.work-button button{
-    width: 130px;
-    background-color: #7a7a7a;
-    height: 33px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: var(--light);
-    border: 1px solid;
-    border-radius: 5px;
-    cursor: "pointer";
-    position: "relative";
+@media screen and (max-width: 430px) {
+  .show-work {
+    gap: 2rem;
+  }
+  .show-work img {
+    height: 200px;
+  }
 }
-
-.show-work{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 3rem 10rem;
-    gap: 4rem;
- justify-content: space-around;
-/* background-color: azure; */
-}
-.show-work img:hover{
-    box-shadow: -1px 0px 34px 8px rgba(69,91,96,0.75);
-    -webkit-box-shadow: -1px 0px 34px 8px rgba(69,91,96,0.75);
-    -moz-box-shadow: -1px 0px 34px 8px rgba(69,91,96,0.75);
-}
-.show-work img{
-    width: 45%;
-    height: 270px;
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
-}
-@media screen and (max-width:1600px) {
-    .show-work{
-        padding: 3rem 5rem;
-    }
-}
- @media screen and (max-width:1300px) {
-
-    .show-work{
-        padding: 3rem 2rem;
-    }
-}
-
-@media screen and (max-width:1000px) {
-    .show-work img{
-        width: 70%;
-    }
-    .work-button button{
-        width: 35%;
-    }
-    .work-button{
-        gap: 1rem;
-    }
-}
-@media screen and (max-width:600px) {
-    .show-work img{
-        width: 90%;
-    }
-
-}
-@media screen and (max-width:452px) {
-    .show-work img{
-        width: 100%;
-    }
-    .show-work{
-        padding: 3rem 1rem;
-        gap: 3rem;
-    }
-
-}
-@media screen and (max-width:430px) {
-    .show-work{
-        gap: 2rem;
-    }
-    .show-work img{
-       height: 200px ;
-    }
- 
-
-}
-@media screen and (max-width:390px) {
-
-    .show-work img{
-       height: 190px ;
-    }
- 
-
+@media screen and (max-width: 390px) {
+  .show-work img {
+    height: 190px;
+  }
 }
 /*@media screen and (max-width:1050px) {
     .show-work{

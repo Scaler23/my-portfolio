@@ -1,74 +1,121 @@
-.whole{
+.whole {
   width: 100%;
- background-color: #455C60;
-text-align: center;
-
-
+  background-color: #455c60;
+  text-align: center;
+ 
+z-index: 10;
 }
-.half{
+.half {
   width: 100%;
   margin-top: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.main-container{
- width: 71%;
+
 
 }
-.hoabpose{
-  box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
-  -webkit-box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
-  -moz-box-shadow: -18px 23px 15px -2px rgba(0,0,0,0.75);
-  position: relative;
+.main-container {
+  width: 71%;
+ 
 }
-.hoabpo{
+.hoabpose {
+  box-shadow: -18px 23px 15px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -18px 23px 15px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -18px 23px 15px -2px rgba(0, 0, 0, 0.75);
+  position: relative;
+z-index: 10;
+}
+.hoabpo {
   border: 1px solid #d4d1d1;
   border-bottom: none;
   padding-bottom: 10rem;
- position: relative;
-  background-image: linear-gradient(to bottom, #a6a6a600, #595f62ab, #42454583, #2B2B2B);
-}
-.myPicture{
-    position: absolute;
-    right: 200px;
-    width: 25rem;
-  height: 300px;
-  border-radius: 20px;
-  background-color: #5AAD95;
-    top: 12.5rem;
-    /* background-color: #193030; */
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(75, 121, 117, 0.875) 21%,
+    #595f62ab 43%,
+    #42454583 71%,
+    #2b2b2b 88%
+  );
 
 }
-.myPicture .img-wrapper{
+
+.myPicture{
+  display: flex;
+  justify-content: center;
   position: absolute;
+  width: 650px;
+  right: -2.5rem;
+  top: 9rem;
+  
+  z-index: 100;
+
+
+}
+.myPicture.img-container{
   width: 100%;
-  border: 4px solid white;
   height: 100%;
-  top: -60px;
-  border-radius: 20px;
-  left: 60px;
 }
-.myPicture .img-container{
+.img-container img{
   width: 100%;
-  border-radius: 20px;
-  position: absolute;
-  width: 900px;
-  left: -16rem;
- z-index: 1000;
- bottom: -3rem;
- clip-path: inset(0 0 9.5% 0); /* Cuts the bottom half */
+  height: 100%;
 }
-.myPicture img{
+.img-wrapper{
+width: 100%;
+height: 450px;
+background-color: #329486;
+left: 50%;
+bottom: -17%;
+box-shadow: 0px 0px 18px 20px rgba(0, 255, 170, 0.33);
+-webkit-box-shadow: 0px 0px 18px 20px rgba(0, 255, 170, 0.33);
+-moz-box-shadow: 0px 0px 18px 20px rgba(0, 255, 170, 0.33);
+transform: translate(-50%, -50%);
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: -100;
+border-radius: 50px;
+}
+.boxOne{
+width: 520px;
+height: 331px;
+background-color: #329486;
+left: 47%;
+ top: 50%; 
+ box-shadow: 0px 0px 18px 20px rgba(0,255,170,0.74);
+-webkit-box-shadow: 0px 0px 18px 20px rgba(0,255,170,0.74);
+-moz-box-shadow: 0px 0px 18px 20px rgba(0,255,170,0.74);
+transform: translate(-50%, -50%);
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 25px;
+}
+.boxTwo{
+width: 100%;
+height: 100%;
+background-color: rgba(25, 113, 100, 0.54);
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 25px;
+}
+.boxThree{
+background-color: rgba(36, 110, 100, 0.54);
+display: flex;
+justify-content: center;
+align-items: center;
 width: 100%;
 height: 100%;
 }
 .circle-top {
-position: absolute;
+  position: absolute;
   width: 120px;
   height: 116px;
   border-radius: 50%;
-  background-color: #B6B6B6;
+  background-color: #b6b6b6;
   bottom: -3.5rem;
   left: 50%;
   transform: translate(-50%);
@@ -83,7 +130,7 @@ position: absolute;
   border-top-right-radius: 60%;
   border-bottom-right-radius: none;
   border-bottom-left-radius: none;
-  background-color: #455C60;
+  background-color: #455c60;
   bottom: -3.6rem;
   left: 50%;
   transform: translate(-50%);
@@ -94,7 +141,7 @@ position: absolute;
 }
 .services-content .rectangle {
   position: absolute;
-  background-color: #455C60;
+  background-color: #455c60;
   transform: translate(-50%);
   left: 50%;
   width: 120px;
@@ -104,7 +151,6 @@ position: absolute;
 }
 
 /* ====================== SOCIAL MEDIA LOGOS =================== */
-
 
 /* ====================== SOCIAL MEDIA LOGOS RESPONSIVE =================== */
 
@@ -116,56 +162,54 @@ position: absolute;
     padding: 10px;
     border-radius: 50%;
 } */
-.logo{
+.logo {
   display: flex;
   flex-direction: row;
-
   align-items: center;
-  
-  padding: 22px 10px;
-width: 15rem;
-gap: 10px;
+  padding: 10px 10px;
+  width: 20rem;
+  gap: 10px;
 }
 .logo .icon {
-  width: 25%;
+  width: 30%;
 }
-.logo span{
-  font-size: 25px;
-letter-spacing: 2px;
-  color: #455B60;
+.logo span {
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: white;
   font-family: "League Gothic", sans-serif;
 }
-.logo .code{
-  color: #545454;
+.logo .code {
+  color: white;
 }
 
 .nav-container {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  padding:  0rem 1rem 0rem 2rem;
+  background-color: #3d9488;
+  padding: 0rem 1rem 0rem 2rem;
   width: 100%;
   overflow: hidden;
- 
+  box-shadow: 0px 15px 20px 0px rgba(0, 255, 170, 0.85);
+  -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 255, 170, 0.85);
+  -moz-box-shadow: 0px 15px 20px 0px rgba(0, 255, 170, 0.85);
+   
 }
 .nav-list {
   display: none;
   visibility: none;
   justify-content: center;
   align-items: center;
-  color: #455B60;
+  color: white;
   position: absolute;
-  left: 50%;
+  left: 58%;
   transform: translate(-50%);
-  gap: 5rem;
+  gap: 8rem;
   width: 70%;
-
-
-
+ 
 }
-
-
 
 .nav-list li a {
   font-size: 24px;
@@ -175,52 +219,52 @@ letter-spacing: 2px;
 }
 .nav-list li a::before {
   content: "";
-  height: 4px;
+  height: 8px;
   width: 100%;
-  background-color: #95d0d3;
+  background-color: #00FFAA;
   position: absolute;
   left: 0;
   transition: 0.2s ease-in-out;
   transform: scaleX(0);
-  bottom: -5px;
+  bottom: -1.5rem;
   border-radius: 5px;
-} 
+}
 .nav-list li a:hover::before {
   transform: scaleX(1);
 }
-
 
 /* ================== BURGER NAV ===================*/
 .burger {
   visibility: visible;
   font-size: 40px;
-  color: #455B60;
+  color: #f2f3f3;
   padding: 5px;
-  
 }
 .burger:hover {
-  background-color: #d4d1d1;
+  background-color: #367f75;
 }
 .nav-list.show {
-  top: 100px;
+  top: 85px;
   display: block;
   left: 50%;
   transform: translate(-50%);
-  background-color: #32534b;
+  background-image: linear-gradient(
+    to bottom,
+   #3D9488,
+   #455B60
+ 
+  );
   width: 100%;
   color: white;
   text-align: center;
-
-  z-index: 100;
+  z-index: 1000000;
 }
-
-
 
 .nav-list.show li a {
   font-size: 24px;
 }
 .nav-list.show li:hover {
-  background-color: rgb(93, 163, 136);
+  background-color: #49b2a4;
   transition: 0.3s ease-in-out;
 }
 .nav-list.show li {
@@ -234,24 +278,47 @@ letter-spacing: 2px;
 /* ================= Nav Responsiveness =================== */
 
 /*  ============== My Picture Responsive ================= */
-@media screen and (max-width: 1700px) {
-  .myPicture{
-   right: 140px;
-  }
+@media screen and (max-width:1700px){
+        .myPicture{
+          display: none;
+        }
 }
 @media screen and (max-width: 1500px) {
-  .myPicture{
-    display: none;
+  .nav-list {
+    gap: 5rem;
+    left: 60%;
   }
 }
-
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px){
+    .main-container {
+    width: 100%;
+  }
+    .hoabpo {
+    border: none;
+  background-image: linear-gradient(
+    to bottom,
+   rgba(75, 121, 117, 0) 1%,
+    rgba(75, 121, 117, 0.875) 21%,
+    #595f62ab 43%,
+    #42454583 71%,
+    #2b2b2b 88%
+  );
+  }
+  .hoabpose {
+    box-shadow: none;  z-index: 0;
+  }
+  .half{
+    margin-top:0;
+  
+  }
+}
+@media screen and (max-width: 1300px) {
   .nav-list li a {
     font-size: 24px;
   }
   .nav-list {
     gap: 3rem;
-     left: 60%;
+    left: 60%;
   }
 }
 
@@ -263,7 +330,21 @@ letter-spacing: 2px;
     gap: 2rem;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (max-width:1000px){
+    .logo {
+
+    width: 20rem;
+  }
+  .logo span {
+    font-size: 30px;
+  }
+  .logo .icon {
+    width: 22%;
+  }
+
+}
+@media screen and (min-width: 950px) {
+ 
   .nav-list {
     visibility: visible;
     display: flex;
@@ -271,40 +352,31 @@ letter-spacing: 2px;
   .burger {
     visibility: hidden;
   }
-}
-@media screen and (max-width: 800px) {
-  .main-container{
-    width:100%;
 
-  }
-  .hoabpo{
-    border: none;
-  }
-  .hoabpose{
-    box-shadow: none;
-  }
 }
-@media screen and (max-width:500px){
-  .nav-container{
+
+@media screen and (max-width: 500px) {
+  .nav-container {
     padding: 0 1rem 0 0;
+    
   }
 }
-@media screen and (max-width:370px){
-  .half{
+@media screen and (max-width: 370px) {
+  .half {
     margin-top: 6rem;
   }
 }
-@media screen and (max-width:350px){
-  .logo{
+@media screen and (max-width: 350px) {
+  .logo {
     gap: 5px;
     width: 10rem;
   }
-  .logo span{
-  font-size: 15px;
-}
-.logo .icon {
-  width: 20%;
-}
+  .logo span {
+    font-size: 15px;
+  }
+  .logo .icon {
+    width: 20%;
+  }
 }
 .mouse-container {
   position: fixed;
@@ -348,7 +420,6 @@ letter-spacing: 2px;
 
 .services-content {
   background-color: #b6b6b6;
-width: 100%;
-
+  width: 100%;
 }
 /* =======================BURGER MENU ===================== */

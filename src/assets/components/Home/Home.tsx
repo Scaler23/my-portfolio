@@ -13,15 +13,15 @@ const Home = () => {
     
  
        
-          <motion.span className="font-light text-[48px] hello">Hello, I’m <span className="myName">Johnbert.</span></motion.span> <br />
-          <div className="font-light text-[30px] typewrite">
+          <motion.span className="font-regular text-[56px] hello">Hello, I’m <span className="myName">Johnbert.</span></motion.span> <br />
+          <div className="font-regular text-[38px] typewrite">
           <Typewriter 
-          text="I am a Junior Front-End Web Developer."  /> <span className="type-line">|</span><br />
+          text="I am a Jr. Front-End Web Developer."  /> <span className="type-line">|</span><br />
           </div>
           <a href="#about"  className=" view-work-button">
-            <button className="work text-[20px] font-semibold   bg-white text-[#455B60] 
+            <button className="work text-[20px] font-semibold   bg-white text-[#246E64] 
             " style={{
-              marginTop: "2rem"
+              marginTop: "4rem"
              }}>View my work <IoIosArrowRoundDown className="inline-block arrow " /></button>
           </a>
 

@@ -1,3 +1,6 @@
+#mySkills{
+   padding-top: 10rem;
+}
 .skills{
     display: flex;
     flex-direction: row;
@@ -273,7 +276,12 @@
          
        }
    }
-    @media screen and (max-width:1540px) {
+    @media screen and (max-width:1600px) {
+      .skills{
+         justify-content: center;
+         gap: 7rem;
+         flex-wrap: nowrap;
+      }
          .skill-bar{
             width: 270px;
             height: 12px;
@@ -326,7 +334,45 @@
        }
    }
 
-   @media screen and (max-width:1300px) {
+   @media screen and (max-width:1400px){
+   .skills{
+      justify-content: center;
+      gap: 7rem;
+      flex-wrap: nowrap;
+   }
+         .skill-bar{
+            width: 350px; 
+         }
+         .skill-bar .javaScript{
+            width: 270px; 
+        }
+        .skill-bar .react{
+           width: 220px;
+       }
+        .skill-bar .html{
+           width: 320px;
+       }
+        .skill-bar .css{
+           width: 320px;
+       }
+       .skill-bar .typescript{
+          width: 210px;
+       }
+       .skill-bar .bootstrap{
+          width: 220px;
+       }
+       .skill-bar .tailwinds{
+          width: 220px;
+       }
+       .skill-bar .figma{
+          width: 220px;
+       }
+       .skill-bar .adobe{
+          width: 220px;
+         
+       }
+   }
+   @media screen and (max-width:1100px) {
       .skill-bar{
          width: 250px;
          height: 12px;
@@ -379,7 +425,11 @@
        width: 140px;
     }
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:820px) {
+   .skills{
+      flex-wrap: wrap;
+      gap: 0;
+   }
    .skill-item{
       gap: 2rem;
       margin-bottom: 1rem;

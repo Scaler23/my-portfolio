@@ -4,27 +4,87 @@ import myWeb from "../../images/image services/myWeb.jpg"
 import WebDesign from "../../images/image services/webDesign.jpg"
 import Branding from "../../images/image services/branding.jpg"
 import LogoDesign from "../../images/image services/combinelogo.jpg"
+import { FaMobileAlt } from "react-icons/fa";
+import { MdOutlineBrandingWatermark, MdComputer } from "react-icons/md";
 import "./Services.css";
 const tabs = [
-  { id: "all", label: "All" },
-  { id: "web", label: "Web Design" },
-  { id: "logo", label: "Logo Design" },
-  { id: "branding", label: "Branding" },
+  { id: "all", label: "ALL" },
+  { id: "web", label: "WEB DESIGN" },
+  { id: "logo", label: "LOGO DESIGN" },
+  { id: "branding", label: "BRANDING" },
 ];
 
 const Services = () => {
+  type ImageText = {
+    src: string;
+    title: string;
+    description: string;
+    image: any;
+  }
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
-  const getImages = () => {
+  const getImages = (): ImageText[] => {
     switch (selectedTab.id) {
       case "web":
-        return [myWeb, WebDesign];
+        return [
+        {
+          src: myWeb,
+          title: "WEB DESIGN",
+          description: "A modern, responsive web design for showcasing creative work.",
+          image: <FaMobileAlt />,
+        },
+        {
+          src: WebDesign,
+          title: "WEB DESIGN",
+          description: "A clean and professional landing page built for a startup.",
+            image: <FaMobileAlt />,
+        },
+      ];;
       case "logo":
-        return [LogoDesign];
+        return [
+        {
+          src: LogoDesign,
+          title: "LOGO DESIGN",
+          description: "A clean, scalable logo for a tech company.",
+            image: <FaMobileAlt />,
+        },
+      ];
       case "branding":
-        return [Branding]; 
+        return [
+        {
+          src: Branding,
+          title: "BRANDING",
+          description: "Full branding package for a local artisan coffee brand.",
+            image: <MdOutlineBrandingWatermark />,
+        },
+      ];; 
       default:
-        return [  myWeb, WebDesign, Branding,LogoDesign];
+        return[
+        {
+          src: myWeb,
+          title: "WEB DESIGN",
+          description: "A modern, responsive web design for showcasing creative work",
+            image: <FaMobileAlt />,
+        },
+        {
+          src: WebDesign,
+          title: "WEB DESIGN",
+          description: "A clean and professional landing page built for a startup.",
+            image: <FaMobileAlt />,
+        },
+        {
+          src: Branding,
+          title: "BRANDING",
+          description: "Full branding package for a local artisan coffee brand.",
+            image: <MdOutlineBrandingWatermark />,
+        },
+        {
+          src: LogoDesign,
+          title: "LOGO DESIGN",
+          description: "A clean, scalable logo for a tech company.",
+            image: <MdComputer />,
+        },
+      ];
     }
   };
 
@@ -54,8 +114,9 @@ const Services = () => {
             style={{
               border: "1px solid black",
               backgroundColor:
-                selectedTab.id === tab.id ? "#7a7a7a" : "#b6b6b6",
-              color: selectedTab.id === tab.id ? "#fff" : "#333",
+                selectedTab.id === tab.id ? "#246E64" : "#F2F2F2",
+              color: selectedTab.id === tab.id ? "#fff" : "#454545",
+              borderColor: selectedTab.id === tab.id ? "#FFFFFF" : "#454545"
             }}
           >
             {tab.label}
@@ -65,11 +126,10 @@ const Services = () => {
 
       <div className="show-work">
         <AnimatePresence mode="wait">
-          {getImages().map((src, index) => (
-            <motion.img
-              key={src + index}
-              src={src}
-              alt="work"
+          {getImages().map((item, index) => (
+            <motion.div
+              key={item.src + index}
+                className="selectectedWork relative group"
               viewport={{
                 amount: 0.5,
               }}
@@ -77,7 +137,28 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-            />
+            >
+              <motion.img
+                src={item.src}
+                alt={item.title || "work"}
+              />
+              {/* Hover Overlay */}
+              <div className=" hoverText absolute inset-0 bg-[#ffffff] bg-opacity-10  opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+             <div className="hoverText-wrapper">
+                <div className="image-logo">
+                  <div className="image-box">
+                  <div className="logo-container">
+                  <span className="image-icon">{item.image}</span>
+                  </div>
+                  </div>
+                </div>
+                <div className="content">
+                <span className="workTitle"> {item.title}</span>
+                <span className="workDescription">{item.description}</span>
+                </div>
+            </div>
+              </div>
+            </motion.div>
           ))}
         </AnimatePresence>
       </div>

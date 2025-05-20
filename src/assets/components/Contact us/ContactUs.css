@@ -46,7 +46,7 @@ padding-bottom: 10rem;
     width: 50%;
 }
 .first-column input{
-    background-color: #6E959E;
+    background-color: rgba(36, 110, 100, 0.85);
     padding: 1rem 1.5rem;
     height: 57px;
     border-radius: 10px;
@@ -59,7 +59,7 @@ padding-bottom: 10rem;
 .message{
     width: 100%;
     resize: none;
-    background-color: #6E959E;
+    background-color: rgba(36, 110, 100, 0.85);
     height: 100%;
     padding: 1rem 1.5rem;
     border-radius: 10px;
