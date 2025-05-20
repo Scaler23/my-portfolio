@@ -244,7 +244,7 @@ height: 100%;
   background-color: #367f75;
 }
 .nav-list.show {
-  top: 85px;
+  top: 80px;
   display: block;
   left: 50%;
   transform: translate(-50%);

@@ -199,34 +199,35 @@ margin-bottom: 3rem;
 }
 @media screen and (max-width:650px){
 .image-me{
-   width:480px;
-   height: 460px;
-   left: -1.9rem;
+   width:400px;
+   height: 380px;
+   left: 1.3rem;
 }
 
   .circle-one {
-  width: 290px;
-  height: 290px;
-    left: 4rem;
+  width: 245px;
+  height: 245px;
+  left: 6rem;
+  top: 8.5rem;
   }
   .circle-two{
   top: 7rem;
-  left: 2rem;
-  width: 62px;
-  height: 62px;
+  left: 4rem;
+  width: 42px;
+  height: 42px;
   }
   .circle-three{
-   height: 37px;
+   height: 27px;
   position: absolute;
-  top: 17rem;
-  left: 24rem;
-  width: 37px;
+  top: 15rem;
+  left: 23.5rem;
+  width: 27px;
   }
   .circle-four{
-      height: 25px;
-  top: 29rem;
-  left: 3rem;
-  width: 25px;
+      height: 20px;
+  top: 24rem;
+  left: 5rem;
+  width: 20px;
   }
 }
 @media screen and (max-width: 500px) {
