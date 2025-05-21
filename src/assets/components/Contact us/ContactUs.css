@@ -103,6 +103,27 @@ padding-bottom: 10rem;
 }
 
 @media screen and (max-width:1200px){
+    /* .row{
+        flex-wrap: wrap;
+    }
+    .contact form{
+        width: 60%;
+    }
+
+  
+    .contact form .first-column{
+        width: 100%;
+        
+    } */
+    /* .message{
+        width: 100%;
+        resize: none;
+        height: 150px;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+    } */
+}
+@media screen and (max-width:900px){
     .row{
         flex-wrap: wrap;
     }
@@ -110,10 +131,11 @@ padding-bottom: 10rem;
         width: 60%;
     }
 
-    .contact form .second-column{
-        width: 100%;
-    }
     .contact form .first-column{
+        width: 100%;
+        
+    }
+        .contact form .second-column{
         width: 100%;
         
     }
@@ -136,6 +158,7 @@ padding-bottom: 10rem;
        gap: 4rem;
     }
 }
+
 .logosTwo{
     padding: 10px;
     border-radius: 30px;
