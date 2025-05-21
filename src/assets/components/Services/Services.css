@@ -34,20 +34,19 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 3rem 10rem;
-  gap: 4rem;
+  padding: 5% 5%;
+  gap: 3rem;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-
-  /* background-color: azure; */
+  
 }
 .selectectedWork {
-  width: 37%;
-  height: 210px;
+  width: 400px;
+  height: 230px;
   transition: 0.3s ease-in-out;
   border-radius: 10px;
-  
+  background-color: blanchedalmond;
 }
 
 .selectectedWork img {
@@ -79,7 +78,6 @@ justify-content: center;
 .selectectedWork .hoverText .image-logo .image-box{
   width: 50%;
   height: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,8 +88,8 @@ justify-content: center;
 }
 .selectectedWork .hoverText .logo-container{
 border-radius: 50%;
-height: 70%;
 width: 45px;
+height: 45px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -99,7 +97,7 @@ position: absolute;
 left: 50%;
 transform: translate(-50%);
 transition: 0.4s;
-
+padding: 20px;
 }
 .selectectedWork .hoverText .image-icon {
   color: #246e64;
@@ -119,7 +117,7 @@ transition: 0.4s;
 
 @keyframes  Done{
    0% {
-    left:42.5%;
+    left:43.1%;
     transform: rotate(0deg) ;
   }
   50% {
@@ -133,7 +131,7 @@ transition: 0.4s;
     transform: rotate(-360deg) ;
   }
   100% {
-    left: 42.5%;
+    left: 43.1%;
     transform:  rotate(0deg);
   }
 }
@@ -150,86 +148,84 @@ transition: 0.4s;
   text-align: justify;
 }
 
-@media screen and (max-width: 1600px) {
-  .show-work {
-    padding: 3rem 5rem;
-  }
-}
-@media screen and (max-width: 1300px) {
-  .show-work {
-    padding: 3rem 2rem;
-  }
-}
+
 
 @media screen and (max-width: 1000px) {
-  .show-work img {
-    width: 70%;
-  }
   .work-button button {
     width: 35%;
   }
   .work-button {
     gap: 1rem;
   }
+    .selectectedWork{
+ height: 170px;
+  width: 320px;
 }
-@media screen and (max-width: 600px) {
-  .show-work img {
-    width: 90%;
-  }
+}
+@media screen and (max-width: 800px) {
+   .selectectedWork{
+ height: 250px;
+  width: 450px;
+}
+
+}
+@media screen and (max-width:500px){
+   .selectectedWork{
+ height: 210px;
+  width: 390px;
+}
+.show-work {
+
+  gap: 2rem;
+  padding: 5% 5% 20% 5%;
+  
+}
+}
+@media screen and (max-width:400px){
+   .selectectedWork{
+ height: 180px;
+  width: 400px;
+}
+}
+@media screen and (max-width:300px){
+   .selectectedWork{
+ height: 150px;
+  width: 400px;
+}
+.work-button button{
+  font-size: 10px;
+}
+}
+/* 
+ @media screen and (max-width: 900px) {
+ 
+
 }
 @media screen and (max-width: 452px) {
-  .show-work img {
-    width: 100%;
-  }
-  .show-work {
-    padding: 3rem 1rem;
-    gap: 3rem;
-  }
+
+
 }
 @media screen and (max-width: 430px) {
-  .show-work {
-    gap: 2rem;
-  }
-  .show-work img {
-    height: 200px;
-  }
+
 }
 @media screen and (max-width: 390px) {
-  .show-work img {
-    height: 190px;
-  }
-}
-/*@media screen and (max-width:1050px) {
-    .show-work{
-        padding: 3rem 2rem;
-    }
-}
-@media screen and (max-width:990px) {
-    .show-work img{
-        width: 40%;
-    }
-}
+
+} */
+/*  
+
 @media screen and (max-width:810px) {
     .work-button button{
         width: 180px;
     }
-    .show-work img{
-        width: 60%;
-    }
+
  
 }
 @media screen and (max-width:700px) {
     .work-button button{
         width: 130px;
     }
-    .show-work img{
-        width: 80%;
-    }
 }
 @media screen and (max-width:530px) {
-    .show-work img{
-        width: 100%;
-    }
     .work-button button{
         width: 170px;
     }

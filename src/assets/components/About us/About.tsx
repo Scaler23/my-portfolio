@@ -9,26 +9,56 @@ const About = () => {
       <div className="about-container">
        <div className="image-part">
                  <div className="second-picture">
-                    <div className="circle-one">
-            </div>
-                    <div className="circle-two">
-            </div>
-                    <div className="circle-three">
-            </div>
-                    <div className="circle-four">
-            </div>
-            <div className="image-me">
-                       <motion.img src={Person} alt="" 
-                         viewport={{
+                    <motion.div className="circle-one"
+                      viewport={{
+                amount: 0.5,
+              }}
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0 }}
+              transition={{type: "spring",  duration: 0.5, ease: "easeInOut" }}
+                    >
+            </motion.div>
+                    <motion.div className="circle-two"
+                    viewport={{
+                amount: 0.5,
+              }}
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0 }}
+              transition={{type: "spring",  duration: 0.5, ease: "easeInOut" }}>
+            </motion.div>
+                    <motion.div className="circle-three"
+                    viewport={{
+                amount: 0.5,
+              }}
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0 }}
+              transition={{type: "spring",  duration: 0.5, ease: "easeInOut" }}>
+            </motion.div>
+                    <motion.div className="circle-four"
+                    viewport={{
+                amount: 0.5,
+              }}
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0 }}
+              transition={{type: "spring",  duration: 0.5, ease: "easeInOut" }}>
+            </motion.div>
+            <motion.div 
+            className="image-me"
+            viewport={{
               amount: 0.5,
             }}
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, y: -100 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-                       />
+            >
+                       <motion.img src={Person} alt=""  />
 
-            </div>
+            </motion.div>
           </div>
           
               
