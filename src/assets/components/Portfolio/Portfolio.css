@@ -14,6 +14,7 @@
 .project .port-wrapper:hover {
   margin-left: 3rem;
   width: 50%;
+  height: 65%;
 }
 .project .port-wrapper {
   background-color: #666666;
@@ -69,7 +70,7 @@
     padding: 20px 0px;
   }
   .project .port-wrapper:hover {
- 
+
   width: 50%;
 }
 }
@@ -114,10 +115,13 @@
   }
   .project .port-wrapper {
     height: 100%;
+    padding-right:3rem ;
   }
+
   .project .port-wrapper:hover {
     margin-bottom: 1rem;
     width: 80%;
+    height: 90%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -140,5 +144,6 @@
   .project .port-wrapper:hover {
     margin-bottom: 1rem;
     width: 80%;
+    height: 60%;
   }
 }

@@ -1,5 +1,5 @@
 import "./Portfolio.css"
-import Project from "../../images/websiteImg.png"
+import Project from "../../images/websitepic.png"
 const Portfolio = () => {
   return (
     <div className="Portfolio" id="portfolio">
