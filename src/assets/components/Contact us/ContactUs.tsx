@@ -118,12 +118,12 @@ export const ContactUs: React.FC = () => {
       <div className="logosTwo">
       <div className="logo-wrapperTwo">
         <div className="linkin">
-          <a href="https://www.linkedin.com/in/johnbert-yabut-30136424b/">
+          <a href="www.linkedin.com/in/johnbert-yabut-30136424b">
             <FaLinkedinIn />
           </a>
         </div>
         <div className="gitHub">
-          <a href="https://github.com/Scaler23/my-portfolio.git">
+          <a href="https://github.com/ScalerCode">
           <PiGithubLogoFill />
           </a>
         </div>
