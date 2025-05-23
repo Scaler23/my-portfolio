@@ -176,13 +176,15 @@ padding: 20px;
 .show-work {
   gap: 2rem;
   padding: 5% 5% 20% 5%;
-
 }
 }
 @media screen and (max-width:400px){
    .selectectedWork{
  height: 180px;
   width: 400px;
+}
+.work-button button{
+  font-size: 12px;
 }
 }
 @media screen and (max-width:300px){

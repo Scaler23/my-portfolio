@@ -144,7 +144,7 @@ const Services = () => {
                 alt={item.title || "work"}
               />
               {/* Hover Overlay */}
-              <div className=" hoverText absolute inset-0 bg-[#ffffff] bg-opacity-10  opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className=" hoverText absolute inset-0 bg-[#ffffff] bg-opacity-10  opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-active:opacity-100">
              <div className="hoverText-wrapper">
                 <div className="image-logo">
                   <div className="image-box">
