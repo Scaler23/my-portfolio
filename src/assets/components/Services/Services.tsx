@@ -5,6 +5,7 @@ import Graphics from "../../images/image services/graphics.jpg"
 import Branding from "../../images/image services/branding.jpg"
 import LogoDesign from "../../images/image services/logosample.jpg"
 import { FaMobileAlt } from "react-icons/fa";
+import { SiTaichigraphics } from "react-icons/si";
 import { MdOutlineBrandingWatermark, MdComputer } from "react-icons/md";
 import "./Services.css";
 const tabs = [
@@ -30,7 +31,7 @@ const Services = () => {
         {
           src: WebSample,
           title: "WEB DESIGN",
-          description: "offer professional web design services that help transform your website into a modern, responsive, and user-friendly site",
+          description: "I offer professional web design services that help transform your website into a modern, responsive, and user-friendly site",
           image: <FaMobileAlt />,
         },
       ];;
@@ -39,8 +40,8 @@ const Services = () => {
         {
           src: Graphics,
           title: "GRAPHIC DESIGN",
-          description: "A clean, scalable logo for a tech company.",
-            image: <FaMobileAlt />,
+          description: "Turn your ideas into reality with eye-catching designs and visuals. I craft striking graphics and illustrations that enhance your brand’s impact.",
+            image: <SiTaichigraphics />,
         },
       ];
       case "branding":
@@ -48,13 +49,13 @@ const Services = () => {
         {
           src: Branding,
           title: "BRANDING",
-          description: "Full branding package for a local artisan coffee brand.",
+          description: "Elevate your brand with a strong identity through captivating visuals and thoughtful design strategies.",
             image: <MdOutlineBrandingWatermark />,
         },
            {
           src: LogoDesign,
           title: "LOGO DESIGN",
-          description: "A clean, scalable logo for a tech company.",
+          description: "Give your brand a unique voice with custom logo designs that reflect your identity and vision.",
             image: <FaMobileAlt />,
         }
       ];; 
@@ -63,25 +64,25 @@ const Services = () => {
         {
           src: WebSample,
           title: "WEB DESIGN",
-          description: "offer professional web design services that help transform your website into a modern, responsive, and user-friendly site",
+          description: "I offer professional web design services that help transform your website into a modern, responsive, and user-friendly site",
             image: <FaMobileAlt />,
         },
         {
           src: Graphics,
           title: "GRAPHIC DESIGN",
-          description: "A clean, scalable logo for a tech company.",
-            image: <FaMobileAlt />,
+          description: "Turn your ideas into reality with eye-catching designs and visuals. I craft striking graphics and illustrations that enhance your brand’s impact.",
+            image: <SiTaichigraphics />,
         },
         {
           src: Branding,
           title: "BRANDING",
-          description: "Full branding package for a local artisan coffee brand.",
+          description: "Elevate your brand with a strong identity through captivating visuals and thoughtful design strategies.",
             image: <MdOutlineBrandingWatermark />,
         },
         {
           src: LogoDesign,
           title: "LOGO DESIGN",
-          description: "A clean, scalable logo for a tech company.",
+          description: "Give your brand a unique voice with custom logo designs that reflect your identity and vision.",
             image: <MdComputer />,
         },
       ];
