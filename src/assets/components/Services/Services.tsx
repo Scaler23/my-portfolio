@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import myWeb from "../../images/image services/myweb.jpg"
+import WebSample from "../../images/image services/portfolio.jpg"
 import Graphics from "../../images/image services/graphics.jpg"
 import Branding from "../../images/image services/branding.jpg"
 import LogoDesign from "../../images/image services/logosample.jpg"
@@ -28,7 +28,7 @@ const Services = () => {
       case "web":
         return [
         {
-          src: myWeb,
+          src: WebSample,
           title: "WEB DESIGN",
           description: "offer professional web design services that help transform your website into a modern, responsive, and user-friendly site",
           image: <FaMobileAlt />,
@@ -61,7 +61,7 @@ const Services = () => {
       default:
         return[
         {
-          src: myWeb,
+          src: WebSample,
           title: "WEB DESIGN",
           description: "offer professional web design services that help transform your website into a modern, responsive, and user-friendly site",
             image: <FaMobileAlt />,
