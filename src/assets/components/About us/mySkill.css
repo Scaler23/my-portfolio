@@ -192,7 +192,7 @@
 }
 
 .html-percent::after{
-    content: "90%";
+    content: "80%";
     position: absolute;
    color: rgb(255, 255, 255);
     right: 0;

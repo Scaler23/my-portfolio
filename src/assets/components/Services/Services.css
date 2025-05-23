@@ -13,13 +13,13 @@
 .work-button {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
 }
 .work-button button {
-  width: 130px;
+  width: 170px;
   height: 33px;
   text-align: center;
   font-size: 15px;
@@ -103,7 +103,6 @@ padding: 20px;
   color: #246e64;
   font-size: 40px;
   transition: ease-in-out 0.3s;
-
 }
 .selectectedWork .hoverText .image-box:hover .image-icon{
   color: white;
@@ -175,10 +174,9 @@ padding: 20px;
   width: 390px;
 }
 .show-work {
-
   gap: 2rem;
   padding: 5% 5% 20% 5%;
-  
+
 }
 }
 @media screen and (max-width:400px){

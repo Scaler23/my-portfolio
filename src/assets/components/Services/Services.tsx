@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import myWeb from "../../images/image services/myWeb.jpg"
-import WebDesign from "../../images/image services/webDesign.jpg"
+import myWeb from "../../images/image services/myweb.jpg"
+import Graphics from "../../images/image services/graphics.jpg"
 import Branding from "../../images/image services/branding.jpg"
-import LogoDesign from "../../images/image services/combinelogo.jpg"
+import LogoDesign from "../../images/image services/logosample.jpg"
 import { FaMobileAlt } from "react-icons/fa";
 import { MdOutlineBrandingWatermark, MdComputer } from "react-icons/md";
 import "./Services.css";
 const tabs = [
   { id: "all", label: "ALL" },
   { id: "web", label: "WEB DESIGN" },
-  { id: "logo", label: "LOGO DESIGN" },
+  { id: "graphic", label: "GRAPHIC DESIGN" },
   { id: "branding", label: "BRANDING" },
 ];
 
@@ -30,21 +30,15 @@ const Services = () => {
         {
           src: myWeb,
           title: "WEB DESIGN",
-          description: "A modern, responsive web design for showcasing creative work.",
+          description: "offer professional web design services that help transform your website into a modern, responsive, and user-friendly site",
           image: <FaMobileAlt />,
         },
-        {
-          src: WebDesign,
-          title: "WEB DESIGN",
-          description: "A clean and professional landing page built for a startup.",
-            image: <FaMobileAlt />,
-        },
       ];;
-      case "logo":
+      case "graphic":
         return [
         {
-          src: LogoDesign,
-          title: "LOGO DESIGN",
+          src: Graphics,
+          title: "GRAPHIC DESIGN",
           description: "A clean, scalable logo for a tech company.",
             image: <FaMobileAlt />,
         },
@@ -57,19 +51,25 @@ const Services = () => {
           description: "Full branding package for a local artisan coffee brand.",
             image: <MdOutlineBrandingWatermark />,
         },
+           {
+          src: LogoDesign,
+          title: "LOGO DESIGN",
+          description: "A clean, scalable logo for a tech company.",
+            image: <FaMobileAlt />,
+        }
       ];; 
       default:
         return[
         {
           src: myWeb,
           title: "WEB DESIGN",
-          description: "A modern, responsive web design for showcasing creative work",
+          description: "offer professional web design services that help transform your website into a modern, responsive, and user-friendly site",
             image: <FaMobileAlt />,
         },
         {
-          src: WebDesign,
-          title: "WEB DESIGN",
-          description: "A clean and professional landing page built for a startup.",
+          src: Graphics,
+          title: "GRAPHIC DESIGN",
+          description: "A clean, scalable logo for a tech company.",
             image: <FaMobileAlt />,
         },
         {

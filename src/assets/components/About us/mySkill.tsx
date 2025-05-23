@@ -92,7 +92,7 @@ const MySkills = () => {
                 <div className="skill-bar">
                   <motion.div className="skillBar-color html"
                       initial={{ opacity: 1, width: "0%" }}
-                      whileInView={{ opacity: 1, width: "90%"}}
+                      whileInView={{ opacity: 1, width: "80%"}}
                       exit={{ width: "0%" }}
                       transition={{ duration: 1, ease: "easeInOut" }}
                   ></motion.div>
