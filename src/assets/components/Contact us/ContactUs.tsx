@@ -26,7 +26,6 @@ export const ContactUs: React.FC = () => {
     // alert when name, email, alert is empty or null
     if (!name || !email || !message) {
       notifyAlert();
-      form.current?.reset();
       return;
     }
 
@@ -103,7 +102,8 @@ export const ContactUs: React.FC = () => {
         </div>
         <motion.input
           type="submit"
-          value="SUBMIT"
+          value={isSending ? "SENDING..." : "SUBMIT"}
+          disabled={isSending}
           className="submit"
           viewport={{
             amount: 0.5,
