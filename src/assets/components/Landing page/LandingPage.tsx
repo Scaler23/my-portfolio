@@ -70,7 +70,7 @@ const LandingPage = () => {
               <a href="#mySkills">Skills</a>
             </li>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a href="#portfolio">Project</a>
             </li>
             <li>
               <a href="#services">Services</a>
